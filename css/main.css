@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400;500;700&display=swap");
 html, body, header, main, footer, h1, h2, h3, h4, nav, section, ul, li, p, a, form, div, label, input, textarea, button {
   margin: 0;
   padding: 0;
@@ -14,5 +16,143 @@ html, body, header, main, footer, h1, h2, h3, h4, nav, section, ul, li, p, a, fo
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 400 1.8rem/1.2 "Yantramanav", sans-serif;
+  color: #707070;
+}
+
+header, footer {
+  background: #121418;
+  display: flex;
+  padding: 3rem 8rem;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header li {
+  margin: 0 1rem;
+  padding-top: 1rem;
+}
+
+header li a {
+  font-weight: 300;
+}
+
+h1 a, h2 a {
+  font: italic 700 3.5rem "Playfair Display", serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+footer {
+  color: #ffffff;
+  flex-wrap: wrap;
+}
+
+footer h2, footer h3, footer h4, footer p {
+  margin-bottom: 1rem;
+}
+
+footer .socials {
+  margin-bottom: 3rem;
+}
+
+footer section:nth-of-type(1), footer section:nth-of-type(2) {
+  margin-right: 15rem;
+}
+
+footer section:last-child {
+  content: "";
+  flex-grow: 1;
+}
+
+footer nav {
+  display: flex;
+}
+
+footer nav ul:nth-of-type(2) {
+  margin-left: 2rem;
+}
+
+footer nav li {
+  margin-bottom: 1rem;
+}
+
+footer h4, footer h3 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+footer a, footer p, footer input {
+  font-weight: 300;
+}
+
+footer p {
+  width: 50rem;
+}
+
+footer input {
+  width: 42rem;
+  border: 1px solid #ffffff;
+  padding: 1.5rem;
+  color: #DECEC4;
+  background-color: #80242B;
+}
+
+footer button {
+  background-color: #ffffff;
+  padding: 1.6rem;
+  margin-left: -.5rem;
+}
+
+a {
+  color: #ffffff;
+}
+
+.quoteBtn {
+  padding: 1rem 3rem;
+  border: 1px solid #DECEC4;
+  border-radius: 50rem;
+  color: #DECEC4;
+  background-color: #80242B;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials li {
+  margin: 0 1rem;
+}
+
+.copyright {
+  border-top: solid 1px #ffffff;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright p {
+  width: unset;
+}
+
+span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
 }
 /*# sourceMappingURL=main.css.map */

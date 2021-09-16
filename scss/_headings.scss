@@ -1,0 +1,132 @@
+header {
+    @extend %headerfooter_display;
+    nav ul {
+        display: flex;
+    }
+
+    li {
+        margin: 0 1rem;
+        padding-top: 1rem;
+
+        a{ 
+            font-weight: 300;
+        }
+    }
+
+}
+
+h1 a, h2 a{
+    font: italic 700 3.5rem $logo_font;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+footer {
+    @extend %headerfooter_display;
+    color: $mainlightcolor;
+    flex-wrap: wrap;
+
+    h2, h3, h4, p{
+        margin-bottom: 1rem;
+    }
+
+    .socials {
+        margin-bottom: 3rem;
+    }
+
+    section {
+        &:nth-of-type(1), &:nth-of-type(2) {
+            margin-right: 15rem;
+        }
+
+        &:last-child {
+            content: "";
+            flex-grow: 1;
+
+        }
+    }
+
+    nav {
+        display: flex;
+        
+        ul:nth-of-type(2) {
+            margin-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 1rem;
+        }
+    }
+
+    h4, h3 {
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    a, p, input {
+        font-weight: 300;
+    }
+
+    p {
+        width: 50rem;
+    }
+
+    input {
+        width: 42rem;
+        border: 1px solid $mainlightcolor;
+        padding: 1.5rem;
+        color: $lightaccentcolor;
+        background-color: $darkaccentcolor;
+    }
+
+    button {
+        background-color: $mainlightcolor;
+        padding: 1.6rem;
+        margin-left: -.5rem;
+    }
+}
+
+a {
+    color: $mainlightcolor;
+}
+
+.quoteBtn {
+    padding: 1rem 3rem;
+    border: 1px solid $lightaccentcolor;
+    border-radius: 50rem;
+    color: $lightaccentcolor;
+    background-color: $darkaccentcolor;
+}
+
+.socials {
+    display: flex;
+
+    li {
+        margin: 0 1rem;
+    }
+}
+
+.copyright {
+    border-top: solid 1px $mainlightcolor;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+    p {
+        width: unset;
+    }
+}
+
+span {
+    font-family: $logo_font;
+    font-style: italic;
+}

@@ -14,4 +14,10 @@ html, body, header, main, footer, h1, h2, h3, h4, nav, section, ul, li, p, a, fo
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font: 400 1.8rem/1.2 $main_font;
+    color: $fontcolor;
 }
