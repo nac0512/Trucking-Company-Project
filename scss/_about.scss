@@ -1,0 +1,22 @@
+#about {
+    background-color: $mainbgcolor;
+    h2 {
+        text-align: center;
+        color: $darkaccentcolor;
+        padding: 15rem 0 15rem 0;
+    }
+
+    h3 {
+        color: $lightaccentcolor;
+    }
+
+    ul {
+        padding: 5rem 25rem;
+    }
+
+    li {
+        max-width: 35rem;
+        margin: 0 10rem 10rem 0;
+    }
+
+}

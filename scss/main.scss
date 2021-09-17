@@ -7,8 +7,8 @@ $main_font: 'Yantramanav', sans-serif;
 $logo_font: 'Playfair Display', serif;
 $mainlightcolor: #ffffff;
 $maindarkcolor: #121418;
-$mainmidcolor: #C2C2C2;
-$lightaccentcolor: #DECEC4;
+$mainbgcolor: #EBEBEB;
+$lightaccentcolor: #E6C2B2;
 $darkaccentcolor: #80242B;
 $fontcolor: #707070;
 
@@ -19,3 +19,4 @@ $fontcolor: #707070;
 @import "contactpage";
 @import "form";
 @import "cta";
+@import "about";

@@ -115,7 +115,7 @@ footer input {
   width: 42rem;
   border: 1px solid #ffffff;
   padding: 1.4rem;
-  color: #DECEC4;
+  color: #E6C2B2;
   background-color: #80242B;
 }
 
@@ -131,9 +131,9 @@ a {
 
 .quoteBtn {
   padding: 1.5rem 3rem;
-  border: 1px solid #DECEC4;
+  border: 1px solid #E6C2B2;
   border-radius: 50rem;
-  color: #DECEC4;
+  color: #E6C2B2;
   background-color: #80242B;
 }
 
@@ -160,6 +160,10 @@ a {
 span.copy {
   font-family: "Playfair Display", serif;
   font-style: italic;
+}
+
+#contactpage {
+  margin-top: 12rem;
 }
 
 #contact {
@@ -197,8 +201,8 @@ span.copy {
 form {
   max-width: 65rem;
   margin: 8rem 8rem;
-  border: solid 1px #C2C2C2;
-  background-color: #DECEC4;
+  border: solid 1px #EBEBEB;
+  background-color: #E6C2B2;
 }
 
 form h3 {
@@ -221,7 +225,7 @@ form textarea {
 
 form button {
   text-transform: uppercase;
-  color: #DECEC4;
+  color: #E6C2B2;
   border-radius: 50rem;
   background-color: #80242B;
   padding: 1.5rem 8rem;
@@ -256,10 +260,33 @@ div:first-of-type, div:last-of-type {
 }
 
 #cta a {
-  color: #DECEC4;
+  color: #E6C2B2;
   background-color: #80242B;
-  border: solid 1px #DECEC4;
+  border: solid 1px #E6C2B2;
   border-radius: 50rem;
   padding: 1.5rem 20rem;
+}
+
+#about {
+  background-color: #EBEBEB;
+}
+
+#about h2 {
+  text-align: center;
+  color: #80242B;
+  padding: 15rem 0 15rem 0;
+}
+
+#about h3 {
+  color: #E6C2B2;
+}
+
+#about ul {
+  padding: 5rem 25rem;
+}
+
+#about li {
+  max-width: 35rem;
+  margin: 0 10rem 10rem 0;
 }
 /*# sourceMappingURL=main.css.map */
