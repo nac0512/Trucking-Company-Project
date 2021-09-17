@@ -310,10 +310,60 @@ div:first-of-type, div:last-of-type {
 }
 
 #services p {
-  width: 55rem;
+  max-width: 55rem;
 }
 
 #services form {
   margin-top: 20rem;
+}
+
+#careerspage {
+  background-color: #EBEBEB;
+}
+
+#careerspage section {
+  padding: 0 8rem;
+}
+
+#careerspage h2 {
+  color: #80242B;
+  text-align: center;
+}
+
+#careerspage #mainh2 {
+  color: #121418;
+  padding-top: 20rem;
+}
+
+#careerspage h3 {
+  color: #80242B;
+}
+
+#careerspage ul {
+  margin: 5rem 0;
+}
+
+#positions li {
+  padding-right: 3rem;
+}
+
+#apply {
+  background-color: #E6C2B2;
+  margin: unset;
+}
+
+#apply button {
+  color: #E6C2B2;
+  border-radius: 50rem;
+  background-color: #80242B;
+  padding: 1.5rem 20rem;
+}
+
+#apply button:first-of-type {
+  margin: 0 8rem 0 22rem;
+}
+
+#benefits {
+  padding-left: 25rem;
 }
 /*# sourceMappingURL=main.css.map */
