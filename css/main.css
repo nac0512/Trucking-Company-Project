@@ -289,4 +289,31 @@ div:first-of-type, div:last-of-type {
   max-width: 35rem;
   margin: 0 10rem 10rem 0;
 }
+
+#services {
+  padding: 0 0 10rem 8rem;
+}
+
+#services h2 {
+  width: 100%;
+  color: #121418;
+  padding: 18rem 0 5rem 0;
+}
+
+#services h3 {
+  color: #80242B;
+  margin-bottom: 1rem;
+}
+
+#services li {
+  margin-bottom: 5rem;
+}
+
+#services p {
+  width: 55rem;
+}
+
+#services form {
+  margin-top: 20rem;
+}
 /*# sourceMappingURL=main.css.map */
