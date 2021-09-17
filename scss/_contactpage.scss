@@ -1,0 +1,32 @@
+#contact {
+    padding: 8rem;
+
+    h2 {
+        color: $maindarkcolor;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        color: $darkaccentcolor;
+        margin-bottom: .5rem;
+    }
+
+    p {
+        max-width: 50rem;
+    }
+
+    ul {
+        margin-top: 3rem;
+    }
+
+    li {
+        margin-bottom: 2rem;
+        color: $maindarkcolor;
+        font-size: 2rem;
+    }
+}
+
+.cntinfo {
+    color: $darkaccentcolor;
+}
+

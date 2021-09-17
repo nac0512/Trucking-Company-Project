@@ -20,12 +20,12 @@ h1 a, h2 a{
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 
@@ -126,7 +126,7 @@ a {
     }
 }
 
-span {
+span.copy {
     font-family: $logo_font;
     font-style: italic;
 }
