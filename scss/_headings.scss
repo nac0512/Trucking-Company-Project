@@ -2,10 +2,6 @@ header {
     @extend %headerfooter_display;
     position: fixed;
     top: 0;
-    width: 100%;
-    nav ul {
-        display: flex;
-    }
 
     li {
         margin: 0 1rem;
@@ -15,7 +11,6 @@ header {
             font-weight: 300;
         }
     }
-
 }
 
 h1 a, h2 a{
@@ -35,37 +30,16 @@ h3 {
 footer {
     @extend %headerfooter_display;
     color: $mainlightcolor;
-    flex-wrap: wrap;
-
-    h2, h3, h4, p{
-        margin-bottom: 1rem;
-    }
-
-    .socials {
-        margin-bottom: 3rem;
-    }
 
     section {
         &:nth-of-type(1), &:nth-of-type(2) {
             margin-right: 15rem;
         }
-
-        &:last-child {
-            content: "";
-            flex-grow: 1;
-
-        }
     }
 
     nav {
-        display: flex;
-        
         ul:nth-of-type(2) {
             margin-left: 2rem;
-        }
-
-        li {
-            margin-bottom: 1rem;
         }
     }
 
@@ -79,11 +53,10 @@ footer {
     }
 
     p {
-        width: 50rem;
+        max-width: 50rem;
     }
 
     input {
-        width: 42rem;
         border: 1px solid $mainlightcolor;
         padding: 1.4rem;
         color: $lightaccentcolor;
@@ -91,6 +64,7 @@ footer {
     }
 
     button {
+        border: 1px solid white;
         background-color: $mainlightcolor;
         padding: 1.5rem;
         margin-left: -.5rem;
@@ -110,26 +84,13 @@ a {
 }
 
 .socials {
-    display: flex;
 
     li {
-        margin: 0 1rem;
+        margin-right: 1rem;
     }
 }
 
-.copyright {
-    border-top: solid 1px $mainlightcolor;
-    margin-top: 3rem;
-    padding-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    
-    p {
-        width: unset;
-    }
-}
-
-span.copy {
+.copy {
     font-family: $logo_font;
     font-style: italic;
 }
