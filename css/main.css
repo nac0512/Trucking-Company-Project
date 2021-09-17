@@ -101,6 +101,7 @@ a {
 }
 
 .quoteBtn {
+  max-height: 5.5rem;
   padding: 1.5rem 3rem;
   border: 1px solid #E6C2B2;
   border-radius: 50rem;
@@ -115,6 +116,11 @@ a {
 .copy {
   font-family: "Playfair Display", serif;
   font-style: italic;
+}
+
+.navbar-toggler-icon {
+  width: 4rem;
+  height: 4rem;
 }
 
 #contactpage {

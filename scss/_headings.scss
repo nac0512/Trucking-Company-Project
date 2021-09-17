@@ -76,6 +76,7 @@ a {
 }
 
 .quoteBtn {
+    max-height: 5.5rem;
     padding: 1.5rem 3rem;
     border: 1px solid $lightaccentcolor;
     border-radius: 50rem;
@@ -93,4 +94,9 @@ a {
 .copy {
     font-family: $logo_font;
     font-style: italic;
+}
+
+.navbar-toggler-icon {
+    width: 4rem;
+    height: 4rem;
 }
