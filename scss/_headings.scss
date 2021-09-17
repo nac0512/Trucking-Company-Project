@@ -1,5 +1,8 @@
 header {
     @extend %headerfooter_display;
+    position: fixed;
+    top: 0;
+    width: 100%;
     nav ul {
         display: flex;
     }
@@ -16,16 +19,16 @@ header {
 }
 
 h1 a, h2 a{
-    font: italic 700 3.5rem $logo_font;
+    font: italic 700 4rem $logo_font;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: 700;
 }
 
 h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 
@@ -82,14 +85,14 @@ footer {
     input {
         width: 42rem;
         border: 1px solid $mainlightcolor;
-        padding: 1.5rem;
+        padding: 1.4rem;
         color: $lightaccentcolor;
         background-color: $darkaccentcolor;
     }
 
     button {
         background-color: $mainlightcolor;
-        padding: 1.6rem;
+        padding: 1.5rem;
         margin-left: -.5rem;
     }
 }
@@ -99,7 +102,7 @@ a {
 }
 
 .quoteBtn {
-    padding: 1rem 3rem;
+    padding: 1.5rem 3rem;
     border: 1px solid $lightaccentcolor;
     border-radius: 50rem;
     color: $lightaccentcolor;

@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font: 400 1.8rem/1.2 "Yantramanav", sans-serif;
+  font: 400 2rem/1.2 "Yantramanav", sans-serif;
   color: #707070;
 }
 
@@ -29,6 +29,12 @@ header, footer {
   display: flex;
   padding: 3rem 8rem;
   justify-content: space-between;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 header nav ul {
@@ -45,16 +51,16 @@ header li a {
 }
 
 h1 a, h2 a {
-  font: italic 700 3.5rem "Playfair Display", serif;
+  font: italic 700 4rem "Playfair Display", serif;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 6rem;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 500;
 }
 
@@ -108,14 +114,14 @@ footer p {
 footer input {
   width: 42rem;
   border: 1px solid #ffffff;
-  padding: 1.5rem;
+  padding: 1.4rem;
   color: #DECEC4;
   background-color: #80242B;
 }
 
 footer button {
   background-color: #ffffff;
-  padding: 1.6rem;
+  padding: 1.5rem;
   margin-left: -.5rem;
 }
 
@@ -124,7 +130,7 @@ a {
 }
 
 .quoteBtn {
-  padding: 1rem 3rem;
+  padding: 1.5rem 3rem;
   border: 1px solid #DECEC4;
   border-radius: 50rem;
   color: #DECEC4;
@@ -227,5 +233,33 @@ label {
 
 div:first-of-type, div:last-of-type {
   width: 100%;
+}
+
+#cta {
+  background-image: url("/images/truck.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 10rem;
+  padding: 18rem 8rem;
+}
+
+#cta h2 {
+  color: black;
+  margin: 40rem 0 1rem 0;
+}
+
+#cta p {
+  color: #ffffff;
+  max-width: 52rem;
+  margin-bottom: 5rem;
+  text-shadow: 0.08rem 0 #121418, 0 0.08rem #121418, -0.08rem 0 #121418, 0 -0.08rem #121418;
+}
+
+#cta a {
+  color: #DECEC4;
+  background-color: #80242B;
+  border: solid 1px #DECEC4;
+  border-radius: 50rem;
+  padding: 1.5rem 20rem;
 }
 /*# sourceMappingURL=main.css.map */
