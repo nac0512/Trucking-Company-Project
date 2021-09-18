@@ -1,0 +1,40 @@
+form {
+    max-width: 65rem;
+    border: solid 1px $mainbgcolor;
+    background-color: $lightaccentcolor;
+    height: 70rem;
+
+    h3 {
+        color: $maindarkcolor;
+    }
+
+    h3, input, textarea, button {
+        width: calc(100% - 4rem);
+        margin: 1.5rem 2rem;
+    }
+
+    input, textarea {
+        background-color: rgba(255, 255, 255, .6);
+        padding: 1.5rem 2rem;
+    }
+
+    textarea {
+        height: 30rem;
+    }
+
+    button {
+        text-transform: uppercase;
+        color: $lightaccentcolor;
+        border-radius: 50rem;
+        background-color: $darkaccentcolor;
+        padding: 1.5rem 8rem;
+    }
+}
+
+label {
+    display: none;
+}
+
+div:first-of-type, div:last-of-type {
+    width: 100%;
+}

@@ -1,0 +1,40 @@
+#cta {
+    background-image: url("/images/truck.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 18rem 8rem 30rem 8rem;
+
+    h2 {
+        color: black;
+
+        @media (min-width: 450px) {
+            padding-top: 12rem;
+        }
+
+        @media (min-width: 665px) {
+            padding-top: 20rem;
+        }
+
+        @media (min-width: 992px) {
+            padding-top: 35rem;
+        }
+    }
+
+    p {
+        color: $mainlightcolor;
+        max-width: 52rem;
+        margin-bottom: 5rem;
+        text-shadow: 0.08rem 0 $maindarkcolor,
+        0 0.08rem  $maindarkcolor,
+        -0.08rem 0 $maindarkcolor,
+        0 -0.08rem $maindarkcolor;
+    }
+
+    a {
+        color: $lightaccentcolor;
+        background-color: $darkaccentcolor;
+        border: solid 1px $lightaccentcolor;
+        border-radius: 50rem;
+        padding: 1.5rem 20rem;
+    }
+}

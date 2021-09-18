@@ -1,0 +1,45 @@
+#services {
+    padding: 0 8rem;
+    margin-bottom: 10rem;
+
+    h2 {
+        width: 100%;
+        color: $maindarkcolor;
+        margin-bottom: 5rem;
+
+        @media (min-width: 400px) {
+            padding-top: 35rem;
+        }
+
+        @media (min-width: 992px) {
+            padding-top: 20rem;
+        }
+    }
+
+    h3 {
+        color: $darkaccentcolor;
+        margin-bottom: 1rem;
+    }
+
+    li {
+        margin-bottom: 5rem;
+    }
+
+    p {
+        @media (min-width: 400px) {
+            max-width: 35rem;
+        }
+
+        @media (min-width: 750px) {
+            max-width: 55rem;
+            margin-right: 5rem;
+        }
+    }
+
+    form {
+        
+        @media (min-width: 900px) {
+            margin-top: 22rem;
+        }
+    }
+}
