@@ -21,3 +21,20 @@ body {
     font: 400 2rem/1.2 $main_font;
     color: $fontcolor;
 }
+
+:target {
+
+    @media (min-width: 300px) {
+        scroll-margin-top: 25rem;
+        scroll-snap-margin-top: 47rem;
+    }
+
+    @media (min-width: 977px) {
+        scroll-margin-top: 12rem;
+        scroll-snap-margin-top: 33rem;
+    }
+
+    @media (min-width: 1385px) {
+        scroll-snap-margin-top: 12rem;
+    }
+}

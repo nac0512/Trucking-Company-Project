@@ -24,6 +24,26 @@ body {
   color: #707070;
 }
 
+@media (min-width: 300px) {
+  :target {
+    scroll-margin-top: 25rem;
+    scroll-snap-margin-top: 47rem;
+  }
+}
+
+@media (min-width: 977px) {
+  :target {
+    scroll-margin-top: 12rem;
+    scroll-snap-margin-top: 33rem;
+  }
+}
+
+@media (min-width: 1385px) {
+  :target {
+    scroll-snap-margin-top: 12rem;
+  }
+}
+
 header, footer {
   background: #121418;
 }
@@ -354,23 +374,13 @@ div:first-of-type, div:last-of-type {
 
 #about {
   background-color: #EBEBEB;
+  padding-bottom: 5rem;
 }
 
 #about h2 {
   text-align: center;
   color: #80242B;
-}
-
-@media (min-width: 300px) {
-  #about h2 {
-    padding-top: 50rem;
-  }
-}
-
-@media (min-width: 992px) {
-  #about h2 {
-    padding-top: 20rem;
-  }
+  padding-top: 8rem;
 }
 
 #about h3 {
@@ -440,18 +450,7 @@ div:first-of-type, div:last-of-type {
   width: 100%;
   color: #121418;
   margin-bottom: 5rem;
-}
-
-@media (min-width: 400px) {
-  #services h2 {
-    padding-top: 35rem;
-  }
-}
-
-@media (min-width: 992px) {
-  #services h2 {
-    padding-top: 20rem;
-  }
+  padding-top: 5rem;
 }
 
 #services h3 {
@@ -478,7 +477,7 @@ div:first-of-type, div:last-of-type {
 
 @media (min-width: 900px) {
   #services form {
-    margin-top: 22rem;
+    margin-top: 7rem;
   }
 }
 

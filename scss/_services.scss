@@ -13,14 +13,7 @@
         width: 100%;
         color: $maindarkcolor;
         margin-bottom: 5rem;
-    
-        @include med-phone-to-big-screen {
-            padding-top: 35rem;
-        }
-
-        @media (min-width: 992px) {
-            padding-top: 20rem;
-        }
+        padding-top: 5rem;
     }
 
     h3 {
@@ -45,7 +38,7 @@
 
     form {
         @media (min-width: 900px) {
-            margin-top: 22rem;
+            margin-top: 7rem;
         }
     }
 }
