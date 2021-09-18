@@ -20,4 +20,9 @@ html {
 body {
     font: 400 2rem/1.2 $main_font;
     color: $fontcolor;
+    // margin-top: 10rem;
+
+    // @media (max-width: 768px) {
+    //     margin-top: 26rem;
+    // }
 }

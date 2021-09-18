@@ -30,7 +30,7 @@ header, footer {
 }
 
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
 }
 
@@ -123,10 +123,6 @@ a {
   height: 4rem;
 }
 
-#contactpage {
-  margin-top: 12rem;
-}
-
 #contact {
   padding: 8rem;
 }
@@ -161,9 +157,9 @@ a {
 
 form {
   max-width: 65rem;
-  margin: 8rem 8rem;
   border: solid 1px #EBEBEB;
   background-color: #E6C2B2;
+  height: 70rem;
 }
 
 form h3 {
@@ -204,13 +200,29 @@ div:first-of-type, div:last-of-type {
   background-image: url("/images/truck.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin-top: 10rem;
-  padding: 18rem 8rem;
+  padding: 18rem 8rem 30rem 8rem;
 }
 
 #cta h2 {
   color: black;
-  margin: 40rem 0 1rem 0;
+}
+
+@media (min-width: 450px) {
+  #cta h2 {
+    padding-top: 12rem;
+  }
+}
+
+@media (min-width: 665px) {
+  #cta h2 {
+    padding-top: 20rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #cta h2 {
+    padding-top: 35rem;
+  }
 }
 
 #cta p {
@@ -235,7 +247,18 @@ div:first-of-type, div:last-of-type {
 #about h2 {
   text-align: center;
   color: #80242B;
-  padding: 15rem 0 15rem 0;
+}
+
+@media (min-width: 400px) {
+  #about h2 {
+    padding-top: 35rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #about h2 {
+    padding-top: 20rem;
+  }
 }
 
 #about h3 {
@@ -243,22 +266,60 @@ div:first-of-type, div:last-of-type {
 }
 
 #about ul {
-  padding: 5rem 25rem;
+  padding: 5rem 8rem;
+}
+
+@media (min-width: 1216px) {
+  #about ul {
+    padding: 5rem 20rem;
+  }
 }
 
 #about li {
-  max-width: 35rem;
-  margin: 0 10rem 10rem 0;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 850px) {
+  #about li {
+    max-width: 25rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #about li {
+    max-width: 35rem;
+    margin-bottom: 12rem;
+  }
+}
+
+@media (min-width: 1550px) {
+  #about li {
+    max-width: 45rem;
+  }
 }
 
 #services {
-  padding: 0 0 10rem 8rem;
+  padding: 0 8rem;
+  margin-bottom: 10rem;
 }
 
 #services h2 {
   width: 100%;
   color: #121418;
-  padding: 18rem 0 5rem 0;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 400px) {
+  #services h2 {
+    padding-top: 35rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #services h2 {
+    padding-top: 20rem;
+  }
 }
 
 #services h3 {
@@ -270,12 +331,23 @@ div:first-of-type, div:last-of-type {
   margin-bottom: 5rem;
 }
 
-#services p {
-  max-width: 55rem;
+@media (min-width: 400px) {
+  #services p {
+    max-width: 35rem;
+  }
 }
 
-#services form {
-  margin-top: 20rem;
+@media (min-width: 750px) {
+  #services p {
+    max-width: 55rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  #services form {
+    margin-top: 22rem;
+  }
 }
 
 #careerspage {
@@ -286,6 +358,12 @@ div:first-of-type, div:last-of-type {
   padding: 0 8rem;
 }
 
+@media (min-width: 1000px) {
+  #careerspage section:nth-of-type(2), #careerspage section:nth-of-type(3) {
+    width: 50%;
+  }
+}
+
 #careerspage h2 {
   color: #80242B;
   text-align: center;
@@ -293,7 +371,7 @@ div:first-of-type, div:last-of-type {
 
 #careerspage #mainh2 {
   color: #121418;
-  padding-top: 20rem;
+  padding-top: 8rem;
 }
 
 #careerspage h3 {
@@ -306,8 +384,8 @@ div:first-of-type, div:last-of-type {
 }
 
 #positions li {
-  padding-right: 3rem;
   color: #707070;
+  margin-bottom: 5rem;
 }
 
 #apply {
@@ -319,14 +397,44 @@ div:first-of-type, div:last-of-type {
   color: #E6C2B2;
   border-radius: 50rem;
   background-color: #80242B;
-  padding: 1.5rem 20rem;
+  padding: 1.5rem 8rem;
+  height: 5rem;
+  margin: 1.5rem 0;
 }
 
-#apply button:first-of-type {
-  margin: 0 8rem 0 22rem;
+@media (min-width: 550px) {
+  #apply button {
+    padding: 1.5rem 10rem;
+  }
 }
 
-#benefits {
-  padding-left: 25rem;
+@media (min-width: 800px) {
+  #apply button {
+    padding: 1.5rem 15rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  #apply button {
+    padding: 1.5rem 22rem;
+  }
+}
+
+@media (min-width: 400px) {
+  #apply button:first-of-type {
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  #benefits {
+    padding-left: 15rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  #benefits {
+    padding-left: 25rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

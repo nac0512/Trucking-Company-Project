@@ -3,6 +3,12 @@
 
     section {
         padding: 0 8rem;
+
+        &:nth-of-type(2), &:nth-of-type(3) {
+            @media (min-width: 1000px) {
+                width: 50%;
+            }
+        }
     }
 
     h2 {
@@ -12,7 +18,7 @@
 
     #mainh2 {
         color: $maindarkcolor;
-        padding-top: 20rem;
+        padding-top: 8rem;
     }
 
     h3 {
@@ -26,26 +32,50 @@
 }
 
 #positions li {
-    padding-right: 3rem;
     color: $fontcolor;
+    margin-bottom: 5rem;
 }
 
 #apply {
     background-color: $lightaccentcolor;
     margin: unset;
+
     button {
         color: $lightaccentcolor;
         border-radius: 50rem;
         background-color: $darkaccentcolor;
-        padding: 1.5rem 20rem;
+        padding: 1.5rem 8rem;
+        height: 5rem;
+        margin: 1.5rem 0;
+
+        @media (min-width: 550px) {
+            padding: 1.5rem 10rem;
+        }
+
+        @media (min-width: 800px) {
+            padding: 1.5rem 15rem;
+        }
+
+        @media (min-width: 1500px) {
+            padding: 1.5rem 22rem;
+        }
         
         &:first-of-type {
-            margin: 0 8rem 0 22rem;
+            @media (min-width: 400px) {
+                margin-left: 2rem;
+            }
         }
     }
 }
 
 #benefits {
-    padding-left: 25rem;
+
+    @media (min-width: 1000px) {
+        padding-left: 15rem;
+    }
+
+    @media (min-width: 1500px) {
+        padding-left: 25rem;
+    }
 }
 

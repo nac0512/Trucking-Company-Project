@@ -1,6 +1,6 @@
 header {
     @extend %headerfooter_display;
-    position: fixed;
+    position: sticky;
     top: 0;
 
     li {
