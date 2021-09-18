@@ -2,7 +2,6 @@ form {
     max-width: 65rem;
     border: solid 1px $mainbgcolor;
     background-color: $lightaccentcolor;
-    height: 70rem;
 
     h3 {
         color: $maindarkcolor;
@@ -10,7 +9,7 @@ form {
 
     h3, input, textarea, button {
         width: calc(100% - 4rem);
-        margin: 1.5rem 2rem;
+        margin: 1rem 2rem;
     }
 
     input, textarea {
@@ -27,7 +26,15 @@ form {
         color: $lightaccentcolor;
         border-radius: 50rem;
         background-color: $darkaccentcolor;
-        padding: 1.5rem 8rem;
+        margin-bottom: 2rem;
+
+        @include small-to-med-phone {
+            @include gutters(.5rem, 4rem)
+        }
+    
+        @include med-phone-to-big-screen {
+            @include gutters(1.5rem, 8rem)
+        }
     }
 }
 

@@ -1,5 +1,5 @@
 #cta {
-    background-image: url("/images/truck.jpg");
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/truck.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 18rem 8rem 30rem 8rem;
@@ -35,6 +35,17 @@
         background-color: $darkaccentcolor;
         border: solid 1px $lightaccentcolor;
         border-radius: 50rem;
-        padding: 1.5rem 20rem;
+
+        @include small-to-med-phone {
+            @include gutters(1rem, 25%)
+        }
+    
+        @include med-phone-to-big-screen {
+            @include gutters(1.5rem, 40%)
+        }
+    
+        @media (min-width: 650px) {
+            padding: 1.5rem 22rem;
+        }
     }
 }

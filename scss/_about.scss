@@ -5,8 +5,8 @@
         text-align: center;
         color: $darkaccentcolor;
 
-        @media (min-width: 400px) {
-            padding-top: 35rem;
+        @include small-to-med-phone {
+            padding-top: 50rem;
         }
 
         @media (min-width: 992px) {
@@ -16,10 +16,18 @@
 
     h3 {
         color: $lightaccentcolor;
+        margin-bottom: .5rem;
     }
 
     ul {
-        padding: 5rem 8rem;
+
+        @include small-to-med-phone {
+            @include gutters(3rem, 4rem)
+        }
+    
+        @include med-phone-to-big-screen {
+            @include gutters(3rem, 8rem )
+        }
 
         @media (min-width: 1216px) {
             padding: 5rem 20rem;
