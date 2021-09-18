@@ -191,6 +191,10 @@ a {
   height: 4rem;
 }
 
+#contactpage a {
+  color: #121418;
+}
+
 #contactpage section {
   margin: 0 3rem 5rem 0;
 }
