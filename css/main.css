@@ -197,7 +197,7 @@ div:first-of-type, div:last-of-type {
 }
 
 #cta {
-  background-image: url("/images/truck.jpg");
+  background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/truck.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 18rem 8rem 30rem 8rem;
