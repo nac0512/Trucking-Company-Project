@@ -1,5 +1,25 @@
-//Placeholders
+// Mixins
+@mixin small-to-med-phone {
+    @media (min-width: 300px) {@content;}
+}
+
+@mixin med-phone-to-big-screen {
+    @media (min-width: 400px) {@content;}
+}
+
+@mixin gutters($x, $y) {
+    padding: $x $y;
+}
+
+// Placeholders
 %headerfooter_display {
     background: $maindarkcolor;
-    padding: 3rem 8rem;
-}
+
+    @include small-to-med-phone {
+        @include gutters(3rem, 4rem)
+    }
+
+    @include med-phone-to-big-screen {
+        @include gutters(3rem, 8rem)
+    }
+};

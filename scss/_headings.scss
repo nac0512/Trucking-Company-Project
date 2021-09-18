@@ -14,17 +14,36 @@ header {
 }
 
 h1 a, h2 a{
-    font: italic 700 4rem $logo_font;
+    @include small-to-med-phone {
+        font: italic 700 3rem $logo_font;
+    }
+
+    @include med-phone-to-big-screen {
+        font: italic 700 4rem $logo_font;
+    }
 }
 
 h2 {
-    font-size: 6rem;
     font-weight: 700;
+    @include small-to-med-phone {
+        font-size: 4rem;
+    }
+
+    @include med-phone-to-big-screen {
+        font-size: 6rem;
+    }
 }
 
 h3 {
-    font-size: 3rem;
     font-weight: 500;
+
+    @include small-to-med-phone {
+        font-size: 2.5rem;
+    }
+
+    @include med-phone-to-big-screen {
+        font-size: 3rem;
+    }
 }
 
 footer {
@@ -61,6 +80,14 @@ footer {
         padding: 1.4rem;
         color: $lightaccentcolor;
         background-color: $darkaccentcolor;
+
+        @include small-to-med-phone {
+            width: 65%;
+        }
+    
+        @include med-phone-to-big-screen {
+            width: 75%;
+        }
     }
 
     button {
@@ -77,11 +104,18 @@ a {
 
 .quoteBtn {
     max-height: 5.5rem;
-    padding: 1.5rem 3rem;
     border: 1px solid $lightaccentcolor;
     border-radius: 50rem;
     color: $lightaccentcolor;
     background-color: $darkaccentcolor;
+
+    @include small-to-med-phone {
+        @include gutters(1rem, 1.5rem)
+    }
+
+    @include med-phone-to-big-screen {
+        @include gutters(1.5rem, 3rem)
+    }
 }
 
 .socials {
@@ -89,6 +123,10 @@ a {
     li {
         margin-right: 1rem;
     }
+}
+
+.copyright {
+    font-size: 1.5rem;
 }
 
 .copy {
