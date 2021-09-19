@@ -1,6 +1,10 @@
 #careerspage {
     background-color: $mainbgcolor;
 
+    p {
+        min-height: 8rem;
+    }
+
     section {
         @include small-to-med-phone {
             @include gutters(0rem, 4rem)
@@ -40,6 +44,14 @@
     ul {
         margin: 5rem 0;
         color: $maindarkcolor;
+    }
+
+    @media (min-width: 780px) and (max-width: 992px) {
+        .col-md-4 {
+            flex: 0 0 auto;
+            width: 33.33333333%;
+        }
+
     }
 }
 
@@ -89,5 +101,37 @@
     @media (min-width: 1500px) {
         padding-left: 25rem;
     }
+}
+
+#dedCareers{
+    @include small-to-med-phone {
+        @include servicescareersiconssmall ($dedimagesm)
+    }
+
+    @include careersiconslarge($cdlimagelg);
+}
+
+#regCareers{
+    @include small-to-med-phone {
+        @include servicescareersiconssmall ($regimagesm);
+    }
+
+    @include careersiconslarge($regimagelg);
+}
+
+#natCareers{
+    @include small-to-med-phone {
+        @include servicescareersiconssmall ($natimagesm);
+    }
+
+    @include careersiconslarge($natimagelg);
+}
+
+#cdlCareers{
+    @include small-to-med-phone {
+        @include servicescareersiconssmall ($cdlimagesm)
+    }
+
+    @include careersiconslarge($cdlimagelg);
 }
 

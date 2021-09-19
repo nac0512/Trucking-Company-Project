@@ -50,58 +50,52 @@
             margin-top: 15rem;
         }
     }
+}
 
-    #dedServices{
-        @include small-to-med-phone {
-            @include servicescareersiconssmall ("/images/loadingsmall.svg")
-        }
-
-        @media (min-width: 650px) {
-            @include servicesiconslarge("/images/loadinglarge.svg");
-        }
-
-        @media (min-width: 992px) {
-            @include servicescareersiconssmall("/images/loadingsmall.svg");
-        }
-
-        @media (min-width: 1400px) {
-            @include servicesiconslarge("/images/loadinglarge.svg");
-        }
+#dedServices{
+    @include small-to-med-phone {
+        @include servicescareersiconssmall($dedimagesm);
     }
 
-    #regServices{
-        @include small-to-med-phone {
-            @include servicescareersiconssmall ("/images/routesmall.svg")
-        }
+    @include smallservicesscreen($dedimagelg);
 
-        @media (min-width: 650px) {
-            @include servicesiconslarge("/images/routelarge.svg");
-        }
+    @include medservicesscreen($dedimagesm);
 
-        @media (min-width: 992px) {
-            @include servicescareersiconssmall("/images/routesmall.svg");
-        }
+    @include lgservicesscreen($dedimagelg);
+}
 
-        @media (min-width: 1400px) {
-            @include servicesiconslarge("/images/routelarge.svg");
-        }
+#regServices{
+    @include small-to-med-phone {
+        @include servicescareersiconssmall ($regimagesm)
     }
 
-    #natServices{
-        @include small-to-med-phone {
-            @include servicescareersiconssmall ("/images/mapsmall.svg")
-        }
+    @media (min-width: 650px) {
+        @include servicesiconslarge($regimagelg);
+    }
 
-        @media (min-width: 650px) {
-            @include servicesiconslarge("/images/maplarge.svg");
-        }
+    @media (min-width: 992px) {
+        @include servicescareersiconssmall($regimagesm);
+    }
 
-        @media (min-width: 992px) {
-            @include servicescareersiconssmall("/images/mapsmall.svg");
-        }
+    @media (min-width: 1400px) {
+        @include servicesiconslarge($regimagelg);
+    }
+}
 
-        @media (min-width: 1400px) {
-            @include servicesiconslarge("/images/maplarge.svg");
-        }
+#natServices{
+    @include small-to-med-phone {
+        @include servicescareersiconssmall ($natimagesm)
+    }
+
+    @media (min-width: 650px) {
+        @include servicesiconslarge($natimagelg);
+    }
+
+    @media (min-width: 992px) {
+        @include servicescareersiconssmall($natimagesm);
+    }
+
+    @media (min-width: 1400px) {
+        @include servicesiconslarge($natimagelg);
     }
 }
