@@ -34,7 +34,6 @@ class FormValidation {
 
         }
         else {
-            console.log("true");
             if(fullName == "") {
                 if(!document.querySelector("#name").classList.contains("error")) {
                     document.querySelector("#name").setAttribute("class", "error");
