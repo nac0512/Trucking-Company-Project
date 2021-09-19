@@ -13,14 +13,7 @@
         width: 100%;
         color: $maindarkcolor;
         margin-bottom: 5rem;
-    
-        @include med-phone-to-big-screen {
-            padding-top: 35rem;
-        }
-
-        @media (min-width: 992px) {
-            padding-top: 20rem;
-        }
+        padding-top: 5rem;
     }
 
     h3 {
@@ -32,7 +25,8 @@
         margin-bottom: 5rem;
     }
 
-    p {    
+    p {  
+        min-width: 35rem;  
         @include med-phone-to-big-screen {
             max-width: 35rem;
         }
@@ -45,7 +39,63 @@
 
     form {
         @media (min-width: 900px) {
-            margin-top: 22rem;
+            margin-top: 15rem;
         }
+
+        @media (min-width: 1110px) {
+            margin-top: 20rem;
+        }
+
+        @media (min-width: 1400px) {
+            margin-top: 15rem;
+        }
+    }
+}
+
+#dedServices{
+    @include small-to-med-phone {
+        @include servicescareersiconssmall($dedimagesm);
+    }
+
+    @include smallservicesscreen($dedimagelg);
+
+    @include medservicesscreen($dedimagesm);
+
+    @include lgservicesscreen($dedimagelg);
+}
+
+#regServices{
+    @include small-to-med-phone {
+        @include servicescareersiconssmall ($regimagesm)
+    }
+
+    @media (min-width: 650px) {
+        @include servicesiconslarge($regimagelg);
+    }
+
+    @media (min-width: 992px) {
+        @include servicescareersiconssmall($regimagesm);
+    }
+
+    @media (min-width: 1400px) {
+        @include servicesiconslarge($regimagelg);
+    }
+}
+
+#natServices{
+    @include small-to-med-phone {
+        @include servicescareersiconssmall ($natimagesm)
+    }
+
+    @media (min-width: 650px) {
+        @include servicesiconslarge($natimagelg);
+    }
+
+    @media (min-width: 992px) {
+        @include servicescareersiconssmall($natimagesm);
+    }
+
+    @media (min-width: 1400px) {
+        @include servicesiconslarge($natimagelg);
     }
 }

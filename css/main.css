@@ -24,6 +24,20 @@ body {
   color: #707070;
 }
 
+@media (min-width: 300px) {
+  :target {
+    scroll-margin-top: 25rem;
+    scroll-snap-margin-top: 25rem;
+  }
+}
+
+@media (min-width: 977px) {
+  :target {
+    scroll-margin-top: 12rem;
+    scroll-snap-margin-top: 12rem;
+  }
+}
+
 header, footer {
   background: #121418;
 }
@@ -196,7 +210,7 @@ a {
 }
 
 #contactpage section {
-  margin: 0 3rem 5rem 0;
+  margin: 0 5rem 5rem 0;
 }
 
 @media (min-width: 300px) {
@@ -222,6 +236,7 @@ a {
 }
 
 #contactpage p {
+  min-width: 35rem;
   max-width: 50rem;
 }
 
@@ -237,6 +252,38 @@ a {
 
 .cntinfo {
   color: #80242B;
+}
+
+#call::before {
+  content: "call";
+  font-family: 'Material Icons';
+  font-size: 3.5rem;
+  vertical-align: middle;
+  padding-right: 2rem;
+}
+
+#fax::before {
+  content: "fax";
+  font-family: 'Material Icons';
+  font-size: 3.5rem;
+  vertical-align: middle;
+  padding-right: 2rem;
+}
+
+#webmail::before {
+  content: "email";
+  font-family: 'Material Icons';
+  font-size: 3.5rem;
+  vertical-align: middle;
+  padding-right: 2rem;
+}
+
+#postal::before {
+  content: "place";
+  font-family: 'Material Icons';
+  font-size: 3.5rem;
+  vertical-align: middle;
+  padding-right: 2rem;
 }
 
 form {
@@ -283,12 +330,28 @@ form button {
   }
 }
 
-label {
+form p {
+  margin-left: 2rem;
+}
+
+label:not(.errorLabel) {
   display: none;
 }
 
 div:first-of-type, div:last-of-type {
   width: 100%;
+}
+
+.errorLabel {
+  color: red;
+  font-size: 1.8rem;
+  padding: 0 0 2rem 2rem;
+  margin-right: 1rem;
+  display: inherit;
+}
+
+.error {
+  border: solid 5px red;
 }
 
 #cta {
@@ -354,23 +417,13 @@ div:first-of-type, div:last-of-type {
 
 #about {
   background-color: #EBEBEB;
+  padding-bottom: 5rem;
 }
 
 #about h2 {
   text-align: center;
   color: #80242B;
-}
-
-@media (min-width: 300px) {
-  #about h2 {
-    padding-top: 50rem;
-  }
-}
-
-@media (min-width: 992px) {
-  #about h2 {
-    padding-top: 20rem;
-  }
+  padding-top: 8rem;
 }
 
 #about h3 {
@@ -440,18 +493,7 @@ div:first-of-type, div:last-of-type {
   width: 100%;
   color: #121418;
   margin-bottom: 5rem;
-}
-
-@media (min-width: 400px) {
-  #services h2 {
-    padding-top: 35rem;
-  }
-}
-
-@media (min-width: 992px) {
-  #services h2 {
-    padding-top: 20rem;
-  }
+  padding-top: 5rem;
 }
 
 #services h3 {
@@ -461,6 +503,10 @@ div:first-of-type, div:last-of-type {
 
 #services li {
   margin-bottom: 5rem;
+}
+
+#services p {
+  min-width: 35rem;
 }
 
 @media (min-width: 400px) {
@@ -478,12 +524,148 @@ div:first-of-type, div:last-of-type {
 
 @media (min-width: 900px) {
   #services form {
-    margin-top: 22rem;
+    margin-top: 15rem;
+  }
+}
+
+@media (min-width: 1110px) {
+  #services form {
+    margin-top: 20rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  #services form {
+    margin-top: 15rem;
+  }
+}
+
+@media (min-width: 300px) {
+  #dedServices {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/repeatsmall.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 650px) {
+  #dedServices {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/repeatlarge.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 110px;
+    background-origin: padding-box;
+    padding-left: 15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #dedServices {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/repeatsmall.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  #dedServices {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/repeatlarge.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 110px;
+    background-origin: padding-box;
+    padding-left: 15rem;
+  }
+}
+
+@media (min-width: 300px) {
+  #regServices {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/routesmall.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 650px) {
+  #regServices {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/routelarge.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 110px;
+    background-origin: padding-box;
+    padding-left: 15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #regServices {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/routesmall.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  #regServices {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/routelarge.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 110px;
+    background-origin: padding-box;
+    padding-left: 15rem;
+  }
+}
+
+@media (min-width: 300px) {
+  #natServices {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/mapsmall.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 650px) {
+  #natServices {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/maplarge.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 110px;
+    background-origin: padding-box;
+    padding-left: 15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #natServices {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/mapsmall.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  #natServices {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/maplarge.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 110px;
+    background-origin: padding-box;
+    padding-left: 15rem;
   }
 }
 
 #careerspage {
   background-color: #EBEBEB;
+}
+
+#careerspage p {
+  min-height: 8rem;
 }
 
 @media (min-width: 300px) {
@@ -527,6 +709,13 @@ div:first-of-type, div:last-of-type {
 #careerspage ul {
   margin: 5rem 0;
   color: #121418;
+}
+
+@media (min-width: 780px) and (max-width: 992px) {
+  #careerspage .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
 }
 
 #positions li {
@@ -581,6 +770,86 @@ div:first-of-type, div:last-of-type {
 @media (min-width: 1500px) {
   #wrkBenefits {
     padding-left: 25rem;
+  }
+}
+
+@media (min-width: 300px) {
+  #dedCareers {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/repeatsmall.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 767.5px) {
+  #dedCareers {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/schoollarge.svg");
+    margin-right: 10rem;
+    background-origin: padding-box;
+    padding-top: 18rem;
+    background-position: 5rem 1rem;
+    background-size: 130px;
+  }
+}
+
+@media (min-width: 300px) {
+  #regCareers {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/routesmall.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 767.5px) {
+  #regCareers {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/routelarge.svg");
+    margin-right: 10rem;
+    background-origin: padding-box;
+    padding-top: 18rem;
+    background-position: 5rem 1rem;
+    background-size: 130px;
+  }
+}
+
+@media (min-width: 300px) {
+  #natCareers {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/mapsmall.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 767.5px) {
+  #natCareers {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/maplarge.svg");
+    margin-right: 10rem;
+    background-origin: padding-box;
+    padding-top: 18rem;
+    background-position: 5rem 1rem;
+    background-size: 130px;
+  }
+}
+
+@media (min-width: 300px) {
+  #cdlCareers {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/schoolsmall.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 767.5px) {
+  #cdlCareers {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/schoollarge.svg");
+    margin-right: 10rem;
+    background-origin: padding-box;
+    padding-top: 18rem;
+    background-position: 5rem 1rem;
+    background-size: 130px;
   }
 }
 /*# sourceMappingURL=main.css.map */

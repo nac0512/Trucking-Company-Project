@@ -11,6 +11,60 @@
     padding: $x $y;
 }
 
+@mixin contacticons($code) {
+    content: $code;
+    font-family: 'Material Icons';
+    font-size: 3.5rem;
+    vertical-align: middle;
+    padding-right: 2rem;
+}
+
+@mixin servicescareersiconssmall($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+}
+
+@mixin servicesiconslarge($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 110px;
+    background-origin: padding-box;
+    padding-left: 15rem;
+}
+
+@mixin careersiconslarge($url) {
+    @media (min-width: 767.5px) {
+    background-image: url($url);
+    margin-right: 10rem;
+    background-origin: padding-box;
+    padding-top: 18rem;
+    background-position: 5rem 1rem;
+    background-size: 130px; 
+    }
+}
+
+@mixin smallservicesscreen($url) {
+    @media (min-width: 650px) {
+        @include servicesiconslarge($url);
+    }
+}
+
+@mixin medservicesscreen($url) {
+    @media (min-width: 992px) {
+        @include servicescareersiconssmall($url);
+    }
+}
+
+@mixin lgservicesscreen($url) {
+    @media (min-width: 1400px) {
+        @include servicesiconslarge($url);
+    }
+    
+}
+
 // Placeholders
 %headerfooter_display {
     background: $maindarkcolor;

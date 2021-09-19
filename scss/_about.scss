@@ -1,17 +1,11 @@
 #about {
     background-color: $mainbgcolor;
+    padding-bottom: 5rem;
 
     h2 {
         text-align: center;
         color: $darkaccentcolor;
-
-        @include small-to-med-phone {
-            padding-top: 50rem;
-        }
-
-        @media (min-width: 992px) {
-            padding-top: 20rem;
-        }
+        padding-top: 8rem;
     }
 
     h3 {

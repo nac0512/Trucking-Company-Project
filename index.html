@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <script src="scripts/forms.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous" defer></script>
     <title>Coney Transports - Home</title>
 </head>
 <body>
@@ -14,7 +17,7 @@
         <h1 class="mb-5 mb-lg-0"><a href="#">Coney Transports</a></h1>
         <a href="#services" class="quoteBtn">Get A Quote</a>
         <nav class="navbar navbar-dark navbar-expand-xxl">
-            <button class="navbar-toggler mt-5 mt-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="navButton" class="navbar-toggler mt-5 mt-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="mt-4">
@@ -56,23 +59,23 @@
                 </li>
             </ul>
         </section>
-        <section id="services" class="d-xl-flex justify-content-between">
+        <section id="services" class="d-lg-flex justify-content-between">
             <section>
                 <h2>Our Services</h2>
-                <li>
+                <li id="dedServices">
                     <h3>Dedicated</h3>
                     <p>Have multiple deliveries that would benefit from using the same driver on daily runs? Our dedicated drivers are there every step of the way to provide you with the most accurate and cost-friendly transportation arrangement the industry has to offer.</p>
                 </li>
-                <li>
+                <li id="regServices">
                     <h3>Regional</h3>
                     <p>Whether your cargo Requires a clime-controlled environment or secure transit, Coney Transports provides flexible transportation services through our Regional division, strategically positioned throughout the United States.</p>
                 </li>
-                <li>
+                <li id="natServices">
                     <h3>National</h3>
                     <p>Our National team has the capacity and experience to serve every critical need, from routine freight transport to timely surge response to make sure your freight reaches its destination safely and on-time anywhere in the continental U.S.</p>
                 </li>
             </section>
-            <form action="#URL" method="POST" class="d-flex flex-wrap">
+            <form id="quoteForm" action="#URL" method="POST" class="d-flex flex-wrap align-items-start align-self-start">
                 <h3>Get A Quote</h3>
                 <div>
                     <label for="name">Name:</label>
@@ -123,7 +126,7 @@
         <section>
             <h3 class="mb-3 pt-lg-3 mt-lg-3">Subscribe Today</h3>
             <p class="mb-3">Sign up for emails now and be among the first to learn about exciting updates and any major changes!</p>
-            <input type="text" placeholder="Your Email">
+            <input type="email" placeholder="Your Email">
             <button type="submit">Submit</button>
         </section>
         <section class="copyright d-sm-flex justify-content-between w-100 mt-5 border-top border-2 pt-5">
