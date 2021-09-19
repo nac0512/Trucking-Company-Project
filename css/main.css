@@ -297,12 +297,28 @@ form button {
   }
 }
 
-label {
+form p {
+  margin-left: 2rem;
+}
+
+label:not(.errorLabel) {
   display: none;
 }
 
 div:first-of-type, div:last-of-type {
   width: 100%;
+}
+
+.errorLabel {
+  color: red;
+  font-size: 1.8rem;
+  padding: 0 0 2rem 2rem;
+  margin-right: 1rem;
+  display: inherit;
+}
+
+.error {
+  border: solid 5px red;
 }
 
 #cta {

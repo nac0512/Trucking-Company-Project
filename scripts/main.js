@@ -1,6 +1,7 @@
 class Main {
     constructor() {
         const nav = new Navigation();
+        const form = new FormValidation();
     }
 
     static getInstance() {
