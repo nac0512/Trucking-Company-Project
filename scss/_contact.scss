@@ -5,7 +5,7 @@
     }
 
     section {
-        margin: 0 3rem 5rem 0;
+        margin: 0 5rem 5rem 0;
     }
 
     @include small-to-med-phone {
@@ -27,6 +27,7 @@
     }
 
     p {
+        min-width: 35rem;
         max-width: 50rem;
     }
 
@@ -43,5 +44,21 @@
 
 .cntinfo {
     color: $darkaccentcolor;
+}
+
+#call::before {
+    @include contacticons("call");
+}
+
+#fax::before {
+    @include contacticons("fax");
+}
+
+#webmail::before {
+    @include contacticons("email");
+}
+
+#postal::before {
+    @include contacticons("place");
 }
 

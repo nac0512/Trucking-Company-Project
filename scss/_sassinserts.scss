@@ -11,6 +11,30 @@
     padding: $x $y;
 }
 
+@mixin contacticons($code) {
+    content: $code;
+    font-family: 'Material Icons';
+    font-size: 3.5rem;
+    vertical-align: middle;
+    padding-right: 2rem;
+}
+
+@mixin servicesiconslarge($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 110px;
+    background-origin: padding-box;
+    padding-left: 15rem;
+}
+
+@mixin servicescareersiconssmall($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+}
+
 // Placeholders
 %headerfooter_display {
     background: $maindarkcolor;

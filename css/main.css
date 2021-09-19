@@ -210,7 +210,7 @@ a {
 }
 
 #contactpage section {
-  margin: 0 3rem 5rem 0;
+  margin: 0 5rem 5rem 0;
 }
 
 @media (min-width: 300px) {
@@ -236,6 +236,7 @@ a {
 }
 
 #contactpage p {
+  min-width: 35rem;
   max-width: 50rem;
 }
 
@@ -251,6 +252,38 @@ a {
 
 .cntinfo {
   color: #80242B;
+}
+
+#call::before {
+  content: "call";
+  font-family: 'Material Icons';
+  font-size: 3.5rem;
+  vertical-align: middle;
+  padding-right: 2rem;
+}
+
+#fax::before {
+  content: "fax";
+  font-family: 'Material Icons';
+  font-size: 3.5rem;
+  vertical-align: middle;
+  padding-right: 2rem;
+}
+
+#webmail::before {
+  content: "email";
+  font-family: 'Material Icons';
+  font-size: 3.5rem;
+  vertical-align: middle;
+  padding-right: 2rem;
+}
+
+#postal::before {
+  content: "place";
+  font-family: 'Material Icons';
+  font-size: 3.5rem;
+  vertical-align: middle;
+  padding-right: 2rem;
 }
 
 form {
@@ -472,6 +505,10 @@ div:first-of-type, div:last-of-type {
   margin-bottom: 5rem;
 }
 
+#services p {
+  min-width: 35rem;
+}
+
 @media (min-width: 400px) {
   #services p {
     max-width: 35rem;
@@ -487,7 +524,139 @@ div:first-of-type, div:last-of-type {
 
 @media (min-width: 900px) {
   #services form {
-    margin-top: 7rem;
+    margin-top: 15rem;
+  }
+}
+
+@media (min-width: 1110px) {
+  #services form {
+    margin-top: 20rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  #services form {
+    margin-top: 15rem;
+  }
+}
+
+@media (min-width: 300px) {
+  #services #dedServices {
+    background-image: url("/images/loadingsmall.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 650px) {
+  #services #dedServices {
+    background-image: url("/images/loadinglarge.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 110px;
+    background-origin: padding-box;
+    padding-left: 15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #services #dedServices {
+    background-image: url("/images/loadingsmall.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  #services #dedServices {
+    background-image: url("/images/loadinglarge.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 110px;
+    background-origin: padding-box;
+    padding-left: 15rem;
+  }
+}
+
+@media (min-width: 300px) {
+  #services #regServices {
+    background-image: url("/images/routesmall.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 650px) {
+  #services #regServices {
+    background-image: url("/images/routelarge.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 110px;
+    background-origin: padding-box;
+    padding-left: 15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #services #regServices {
+    background-image: url("/images/routesmall.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  #services #regServices {
+    background-image: url("/images/routelarge.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 110px;
+    background-origin: padding-box;
+    padding-left: 15rem;
+  }
+}
+
+@media (min-width: 300px) {
+  #services #natServices {
+    background-image: url("/images/mapsmall.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 650px) {
+  #services #natServices {
+    background-image: url("/images/maplarge.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 110px;
+    background-origin: padding-box;
+    padding-left: 15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #services #natServices {
+    background-image: url("/images/mapsmall.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  #services #natServices {
+    background-image: url("/images/maplarge.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 110px;
+    background-origin: padding-box;
+    padding-left: 15rem;
   }
 }
 
