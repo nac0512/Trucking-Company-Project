@@ -27,19 +27,13 @@ body {
 @media (min-width: 300px) {
   :target {
     scroll-margin-top: 25rem;
-    scroll-snap-margin-top: 47rem;
+    scroll-snap-margin-top: 25rem;
   }
 }
 
 @media (min-width: 977px) {
   :target {
     scroll-margin-top: 12rem;
-    scroll-snap-margin-top: 33rem;
-  }
-}
-
-@media (min-width: 1385px) {
-  :target {
     scroll-snap-margin-top: 12rem;
   }
 }
