@@ -155,15 +155,15 @@ footer button {
   background-color: #ffffff;
   margin-left: -.8rem;
   color: transparent;
-  background: white url("/images/email.svg") no-repeat top;
+  background: white url("https://coneynicollete-fs.github.io/coneytransports/images/email.svg") no-repeat top;
 }
 
 footer button:hover {
-  background: white url("/images/emailhover.svg") no-repeat top;
+  background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailhover.svg") no-repeat top;
 }
 
 footer button:active {
-  background: white url("/images/emailactive.svg") no-repeat top;
+  background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailactive.svg") no-repeat top;
 }
 
 a {
