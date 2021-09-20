@@ -5,9 +5,12 @@ header {
 
     li {
         margin: 0 1rem;
-        padding-top: 1rem;
 
-        a{ 
+        @media (max-width: 1400px) {
+            padding-top: 1rem;
+        }
+        
+        a { 
             font-weight: 300;
         }
     }
@@ -76,13 +79,14 @@ footer {
     }
 
     input {
-        border: 1px solid $mainlightcolor;
-        padding: 1.4rem;
+        height: 6rem;
+        border: 2px solid $mainlightcolor;
         color: $lightaccentcolor;
         background-color: $darkaccentcolor;
+        text-indent: 1rem;
 
         @include small-to-med-phone {
-            width: 65%;
+            max-width: 65%;
         }
     
         @include med-phone-to-big-screen {
@@ -91,10 +95,10 @@ footer {
     }
 
     button {
-        border: 1px solid white;
+        height: 6rem;
+        padding: 0 1.5rem;
         background-color: $mainlightcolor;
-        padding: 1.5rem;
-        margin-left: -.5rem;
+        margin-left: -.8rem;
     }
 }
 
@@ -103,18 +107,18 @@ a {
 }
 
 .quoteBtn {
-    max-height: 5.5rem;
+    height: fit-content;
     border: 1px solid $lightaccentcolor;
     border-radius: 50rem;
     color: $lightaccentcolor;
     background-color: $darkaccentcolor;
 
     @include small-to-med-phone {
-        @include gutters(1rem, 1.5rem)
+        @include gutters(.8rem, 1.5rem)
     }
 
     @include med-phone-to-big-screen {
-        @include gutters(1.5rem, 3rem)
+        @include gutters(1.2rem, 3rem)
     }
 }
 
@@ -132,9 +136,4 @@ a {
 .copy {
     font-family: $logo_font;
     font-style: italic;
-}
-
-.navbar-toggler-icon {
-    width: 4rem;
-    height: 4rem;
 }

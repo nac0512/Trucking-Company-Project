@@ -41,7 +41,7 @@
     margin-right: 10rem;
     background-origin: padding-box;
     padding-top: 18rem;
-    background-position: 5rem 1rem;
+    background-position: 30% 1rem;
     background-size: 130px; 
     }
 }
@@ -62,7 +62,6 @@
     @media (min-width: 1400px) {
         @include servicesiconslarge($url);
     }
-    
 }
 
 // Placeholders

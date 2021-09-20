@@ -1,0 +1,89 @@
+:target {
+
+    @media (min-width: 300px) {
+        scroll-margin-top: 25rem;
+        scroll-snap-margin-top: 25rem;
+    }
+
+    @media (min-width: 977px) {
+        scroll-margin-top: 12rem;
+        scroll-snap-margin-top: 12rem;
+    }
+}
+
+.current {
+    color: $lightaccentcolor;
+    text-shadow: 1.8px 1.8px 3px $darkaccentcolor;
+    border-bottom: dashed 1.98px;
+    padding-bottom: .2rem;
+}
+
+nav a{
+    transition: color 0.1s ease-in-out;
+    &:hover {
+        color: $lightaccentcolor;
+    }
+}
+
+h1 a:hover, h2 a:hover {
+    color: $mainlightcolor;
+}
+
+.quoteBtn, #cta a {
+    display: table;
+    margin: -1.5rem 0;
+    transition: transform 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.164) inset;
+
+    @media (min-width:992px) { 
+        margin-top: 0;
+    }
+
+    &:hover {
+        color: $darkaccentcolor;
+        background-color: $lightaccentcolor;
+        border-color: $darkaccentcolor;
+        box-shadow: 3px 3px 5px rgba(59, 19, 19, 0.432) inset;
+    }
+
+    &:active {
+        transform: scale(.95);
+    }
+}
+
+form button, #careerspage button {
+    border: solid 1px $fontcolor;
+    transition: transform 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.397) inset;
+
+    &:hover {
+        color: $darkaccentcolor;
+        background-color: $fontcolor;
+    }
+
+    &:active {
+        transform: scale(.98);
+    }
+}
+
+.navbar {
+    @media (min-width:992px) {
+        padding: 0;
+        margin-top: -2.8rem;
+    }
+}
+
+.navbar-toggler {
+    margin-top: .5rem;
+
+    @media (max-width:992px) {
+        margin: 3.5rem 0 0rem 1rem;
+    }
+}
+
+.navbar-toggler-icon {
+    width: 3rem;
+    height: 3rem;
+}

@@ -16,16 +16,16 @@
     <header class="d-lg-flex justify-content-between w-100">
         <h1 class="mb-5 mb-lg-0"><a href="#">Coney Transports</a></h1>
         <a href="#services" class="quoteBtn">Get A Quote</a>
-        <nav class="navbar navbar-dark navbar-expand-xxl">
-            <button id="navButton" class="navbar-toggler mt-5 mt-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar-dark navbar-expand-xxl">
+            <button id="navButton" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="mt-4">
                 <ul class="d-xxl-flex collapse" id="navbarToggleExternalContent">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#reviews">Testimonials</a></li>
+                    <li><a href="#" class="current cta">Home</a></li>
+                    <li><a href="#about" class="about">About Us</a></li>
+                    <li><a href="#services" class="services servicesSection">Services</a></li>
+                    <li><a href="#reviews" class="reviews">Testimonials</a></li>
                     <li><a href="careers.html">Careers</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -60,7 +60,7 @@
             </ul>
         </section>
         <section id="services" class="d-lg-flex justify-content-between">
-            <section>
+            <section id="servicesSection">
                 <h2>Our Services</h2>
                 <li id="dedServices">
                     <h3>Dedicated</h3>
@@ -96,6 +96,7 @@
                 <button type="submit">Submit</button>
             </form>
         </section>
+        <section id="reviews"></section>
     </main>
     <footer class="d-lg-flex flex-lg-wrap justify-content-between w-100">
         <section>
@@ -129,7 +130,7 @@
             <input type="email" placeholder="Your Email">
             <button type="submit">Submit</button>
         </section>
-        <section class="copyright d-sm-flex justify-content-between w-100 mt-5 border-top border-2 pt-5">
+        <section class="copyright d-sm-flex justify-content-between w-100 mt-5 border-top border-2 pt-4">
             <p class="pb-2">&copy 2021 <span class="copy">Coney Transport<span></p>
             <p>Privacy Policy | Terms & Conditions</p>
         </section>
