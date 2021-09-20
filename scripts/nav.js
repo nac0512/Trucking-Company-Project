@@ -22,9 +22,9 @@ class Navigation {
             });
 
             navLi.forEach((li) => {
-                li.classList.remove("current");
+                li.classList.remove("currentScroll");
                 if (li.classList.contains(current)) {
-                li.classList.add("current");
+                li.classList.add("currentScroll");
                 }
             });
         };

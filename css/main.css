@@ -170,6 +170,10 @@ a {
   color: #ffffff;
 }
 
+#footerNav {
+  margin-right: 1.8rem;
+}
+
 .quoteBtn {
   height: fit-content;
   border: 1px solid #E6C2B2;
@@ -255,7 +259,7 @@ a {
   }
 }
 
-.current {
+.currentScroll, .currentAlways {
   color: #E6C2B2;
   text-shadow: 1.8px 1.8px 3px #80242B;
   border-bottom: dashed 1.98px;
@@ -918,12 +922,15 @@ div:first-of-type, div:last-of-type {
 
 @media (min-width: 767.5px) {
   #dedCareers {
-    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/schoollarge.svg");
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/repeatlarge.svg");
     margin-right: 10rem;
     background-origin: padding-box;
     padding-top: 18rem;
-    background-position: 30% 1rem;
+    background-position: 30% 2rem;
     background-size: 130px;
+  }
+  #dedCareers h3 {
+    margin-left: 15%;
   }
 }
 
@@ -942,8 +949,11 @@ div:first-of-type, div:last-of-type {
     margin-right: 10rem;
     background-origin: padding-box;
     padding-top: 18rem;
-    background-position: 30% 1rem;
+    background-position: 30% 2rem;
     background-size: 130px;
+  }
+  #regCareers h3 {
+    margin-left: 14%;
   }
 }
 
@@ -962,8 +972,11 @@ div:first-of-type, div:last-of-type {
     margin-right: 10rem;
     background-origin: padding-box;
     padding-top: 18rem;
-    background-position: 30% 1rem;
+    background-position: 30% 2rem;
     background-size: 130px;
+  }
+  #natCareers h3 {
+    margin-left: 20%;
   }
 }
 
@@ -982,8 +995,11 @@ div:first-of-type, div:last-of-type {
     margin-right: 10rem;
     background-origin: padding-box;
     padding-top: 18rem;
-    background-position: 30% 1rem;
+    background-position: 30% 2rem;
     background-size: 130px;
+  }
+  #cdlCareers h3 {
+    margin-left: 32%;
   }
 }
 /*# sourceMappingURL=main.css.map */

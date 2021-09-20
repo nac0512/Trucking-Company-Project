@@ -35,14 +35,18 @@
     padding-left: 15rem;
 }
 
-@mixin careersiconslarge($url) {
+@mixin careersiconslarge($url, $margin) {
     @media (min-width: 767.5px) {
-    background-image: url($url);
-    margin-right: 10rem;
-    background-origin: padding-box;
-    padding-top: 18rem;
-    background-position: 30% 1rem;
-    background-size: 130px; 
+        background-image: url($url);
+        margin-right: 10rem;
+        background-origin: padding-box;
+        padding-top: 18rem;
+        background-position: 30% 2rem;
+        background-size: 130px; 
+        
+        h3 {
+            margin-left: $margin;
+        }
     }
 }
 

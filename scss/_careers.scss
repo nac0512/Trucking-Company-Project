@@ -107,7 +107,7 @@
         @include servicescareersiconssmall ($dedimagesm)
     }
 
-    @include careersiconslarge($cdlimagelg);
+    @include careersiconslarge($dedimagelg, 15%);
 }
 
 #regCareers{
@@ -115,7 +115,7 @@
         @include servicescareersiconssmall ($regimagesm);
     }
 
-    @include careersiconslarge($regimagelg);
+    @include careersiconslarge($regimagelg, 14%);
 }
 
 #natCareers{
@@ -123,7 +123,7 @@
         @include servicescareersiconssmall ($natimagesm);
     }
 
-    @include careersiconslarge($natimagelg);
+    @include careersiconslarge($natimagelg, 20%);
 }
 
 #cdlCareers{
@@ -131,6 +131,6 @@
         @include servicescareersiconssmall ($cdlimagesm)
     }
 
-    @include careersiconslarge($cdlimagelg);
+    @include careersiconslarge($cdlimagelg, 32%);
 }
 
