@@ -33,6 +33,7 @@
 
     h3 {
         color: $darkaccentcolor;
+        text-align: center;
     }
 
     #drvBenefits {
@@ -67,20 +68,21 @@
         color: $lightaccentcolor;
         border-radius: 50rem;
         background-color: $darkaccentcolor;
-        padding: 1.5rem 6rem;
+        padding: 0rem 6rem;
         height: 5rem;
         margin: 1.5rem 0;
 
+
         @media (min-width: 550px) {
-            padding: 1.5rem 10rem;
+            padding: 0rem 10rem;
         }
 
         @media (min-width: 800px) {
-            padding: 1.5rem 15rem;
+            padding: 0rem 15rem;
         }
 
         @media (min-width: 1500px) {
-            padding: 1.5rem 22rem;
+            padding: 0rem 22rem;
         }
         
         &:first-of-type {
@@ -107,7 +109,7 @@
         @include servicescareersiconssmall ($dedimagesm)
     }
 
-    @include careersiconslarge($dedimagelg, 15%);
+    @include careersiconslarge($dedimagelg, -18%);
 }
 
 #regCareers{
@@ -115,7 +117,7 @@
         @include servicescareersiconssmall ($regimagesm);
     }
 
-    @include careersiconslarge($regimagelg, 14%);
+    @include careersiconslarge($regimagelg, -20%);
 }
 
 #natCareers{
@@ -123,7 +125,7 @@
         @include servicescareersiconssmall ($natimagesm);
     }
 
-    @include careersiconslarge($natimagelg, 20%);
+    @include careersiconslarge($natimagelg, -20%);
 }
 
 #cdlCareers{
@@ -131,6 +133,6 @@
         @include servicescareersiconssmall ($cdlimagesm)
     }
 
-    @include careersiconslarge($cdlimagelg, 32%);
+    @include careersiconslarge($cdlimagelg, -18%);
 }
 

@@ -21,12 +21,16 @@
         margin-bottom: .5rem;
     }
 
+    .formSubmitted {
+        color: $maindarkcolor;
+    }
+
     li {
         margin-bottom: 5rem;
     }
 
     p {  
-        min-width: 35rem;  
+        min-width: 30rem;  
         @include med-phone-to-big-screen {
             max-width: 35rem;
         }
@@ -39,15 +43,15 @@
 
     form {
         @media (min-width: 900px) {
-            margin-top: 15rem;
+            margin-top: 20%;
         }
 
         @media (min-width: 1110px) {
-            margin-top: 20rem;
+            margin-top: 15%;
         }
 
         @media (min-width: 1400px) {
-            margin-top: 15rem;
+            margin-top: 10%;
         }
     }
 }

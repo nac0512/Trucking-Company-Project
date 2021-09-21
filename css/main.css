@@ -21,8 +21,12 @@ html {
 }
 
 body {
-  font: 400 2rem/1.2 "Yantramanav", sans-serif;
+  font: 400 2rem/1.4 "Yantramanav", sans-serif;
   color: #707070;
+}
+
+a:hover {
+  color: #E6C2B2;
 }
 
 header, footer {
@@ -58,6 +62,10 @@ header li {
 
 header li a {
   font-weight: 300;
+}
+
+h1 a, h2 a {
+  white-space: nowrap;
 }
 
 @media (min-width: 300px) {
@@ -108,14 +116,6 @@ footer {
   color: #ffffff;
 }
 
-footer section:nth-of-type(1), footer section:nth-of-type(2) {
-  margin-right: 15rem;
-}
-
-footer nav ul:nth-of-type(2) {
-  margin-left: 2rem;
-}
-
 footer h4, footer h3 {
   font-size: 3rem;
   font-weight: 300;
@@ -153,17 +153,23 @@ footer button {
   height: 6rem;
   padding: 0 1.5rem;
   background-color: #ffffff;
-  margin-left: -.8rem;
+  margin-left: -1rem;
   color: transparent;
   background: white url("https://coneynicollete-fs.github.io/coneytransports/images/email.svg") no-repeat top;
 }
 
-footer button:hover {
-  background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailhover.svg") no-repeat top;
+@media (any-hover: hover) {
+  footer button:hover {
+    background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailhover.svg") no-repeat top;
+  }
 }
 
 footer button:active {
   background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailactive.svg") no-repeat top;
+}
+
+footer .errorLabel {
+  padding: 1rem 0 0 0;
 }
 
 a {
@@ -171,7 +177,7 @@ a {
 }
 
 #footerNav {
-  margin-right: 1.8rem;
+  margin-right: 3.8rem;
 }
 
 .quoteBtn {
@@ -208,10 +214,6 @@ a {
   transition: color 0.1s ease-in-out;
 }
 
-.socials a:hover {
-  color: #E6C2B2;
-}
-
 #fb::before {
   content: "";
   font: 400 4rem "Font Awesome 5 Brands";
@@ -245,33 +247,32 @@ a {
   font-style: italic;
 }
 
+#thankYouMessage {
+  color: #E6C2B2;
+}
+
 @media (min-width: 300px) {
   :target {
-    scroll-margin-top: 25rem;
-    scroll-snap-margin-top: 25rem;
+    scroll-margin-top: 20rem;
+    scroll-snap-margin-top: 20rem;
   }
 }
 
 @media (min-width: 977px) {
   :target {
-    scroll-margin-top: 12rem;
-    scroll-snap-margin-top: 12rem;
+    scroll-margin-top: 10rem;
+    scroll-snap-margin-top: 10rem;
   }
 }
 
 .currentScroll, .currentAlways {
-  color: #E6C2B2;
   text-shadow: 1.8px 1.8px 3px #80242B;
   border-bottom: dashed 1.98px;
   padding-bottom: .2rem;
 }
 
 nav a {
-  transition: color 0.1s ease-in-out;
-}
-
-nav a:hover {
-  color: #E6C2B2;
+  transition: color 0.2s ease-in-out;
 }
 
 h1 a:hover, h2 a:hover {
@@ -291,11 +292,13 @@ h1 a:hover, h2 a:hover {
   }
 }
 
-.quoteBtn:hover, #cta a:hover {
-  color: #80242B;
-  background-color: #E6C2B2;
-  border-color: #80242B;
-  box-shadow: 3px 3px 5px rgba(59, 19, 19, 0.432) inset;
+@media (any-hover: hover) {
+  .quoteBtn:hover, #cta a:hover {
+    color: #80242B;
+    background-color: #E6C2B2;
+    border-color: #80242B;
+    box-shadow: 3px 3px 5px rgba(59, 19, 19, 0.432) inset;
+  }
 }
 
 .quoteBtn:active, #cta a:active {
@@ -308,9 +311,11 @@ form button, #careerspage button {
   box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.397) inset;
 }
 
-form button:hover, #careerspage button:hover {
-  color: #80242B;
-  background-color: #707070;
+@media (any-hover: hover) {
+  form button:hover, #careerspage button:hover {
+    color: #80242B;
+    background-color: #707070;
+  }
 }
 
 form button:active, #careerspage button:active {
@@ -426,13 +431,9 @@ form {
   background-color: #E6C2B2;
 }
 
-form h3 {
-  color: #121418;
-}
-
 form h3, form input, form textarea, form button {
   width: calc(100% - 4rem);
-  margin: 1rem 2rem;
+  margin: 2rem 2rem;
 }
 
 form input, form textarea {
@@ -469,7 +470,13 @@ form button {
 }
 
 form p {
-  margin-left: 2rem;
+  margin: 8rem 0 10rem 2rem;
+  background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/complete.svg");
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  padding-top: 28rem;
+  background-position-x: 60%;
+  background-size: 200px;
 }
 
 label:not(.errorLabel) {
@@ -496,11 +503,28 @@ div:first-of-type, div:last-of-type {
   background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/truck.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 18rem 8rem 30rem 8rem;
+}
+
+@media (min-width: 300px) {
+  #cta {
+    padding: 0rem 4rem 5rem 4rem;
+  }
+}
+
+@media (min-width: 400px) {
+  #cta {
+    padding: 18rem 8rem 15rem 8rem;
+  }
 }
 
 #cta h2 {
   color: #121418;
+}
+
+@media (min-width: 300px) {
+  #cta h2 {
+    padding-top: 23rem;
+  }
 }
 
 @media (min-width: 450px) {
@@ -639,12 +663,16 @@ div:first-of-type, div:last-of-type {
   margin-bottom: .5rem;
 }
 
+#services .formSubmitted {
+  color: #121418;
+}
+
 #services li {
   margin-bottom: 5rem;
 }
 
 #services p {
-  min-width: 35rem;
+  min-width: 30rem;
 }
 
 @media (min-width: 400px) {
@@ -662,19 +690,19 @@ div:first-of-type, div:last-of-type {
 
 @media (min-width: 900px) {
   #services form {
-    margin-top: 15rem;
+    margin-top: 20%;
   }
 }
 
 @media (min-width: 1110px) {
   #services form {
-    margin-top: 20rem;
+    margin-top: 15%;
   }
 }
 
 @media (min-width: 1400px) {
   #services form {
-    margin-top: 15rem;
+    margin-top: 10%;
   }
 }
 
@@ -836,6 +864,7 @@ div:first-of-type, div:last-of-type {
 
 #careerspage h3 {
   color: #80242B;
+  text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -870,26 +899,26 @@ div:first-of-type, div:last-of-type {
   color: #E6C2B2;
   border-radius: 50rem;
   background-color: #80242B;
-  padding: 1.5rem 6rem;
+  padding: 0rem 6rem;
   height: 5rem;
   margin: 1.5rem 0;
 }
 
 @media (min-width: 550px) {
   #apply button {
-    padding: 1.5rem 10rem;
+    padding: 0rem 10rem;
   }
 }
 
 @media (min-width: 800px) {
   #apply button {
-    padding: 1.5rem 15rem;
+    padding: 0rem 15rem;
   }
 }
 
 @media (min-width: 1500px) {
   #apply button {
-    padding: 1.5rem 22rem;
+    padding: 0rem 22rem;
   }
 }
 
@@ -930,7 +959,7 @@ div:first-of-type, div:last-of-type {
     background-size: 130px;
   }
   #dedCareers h3 {
-    margin-left: 15%;
+    margin-left: -18%;
   }
 }
 
@@ -953,7 +982,7 @@ div:first-of-type, div:last-of-type {
     background-size: 130px;
   }
   #regCareers h3 {
-    margin-left: 14%;
+    margin-left: -20%;
   }
 }
 
@@ -976,7 +1005,7 @@ div:first-of-type, div:last-of-type {
     background-size: 130px;
   }
   #natCareers h3 {
-    margin-left: 20%;
+    margin-left: -20%;
   }
 }
 
@@ -999,7 +1028,7 @@ div:first-of-type, div:last-of-type {
     background-size: 130px;
   }
   #cdlCareers h3 {
-    margin-left: 32%;
+    margin-left: -18%;
   }
 }
 /*# sourceMappingURL=main.css.map */

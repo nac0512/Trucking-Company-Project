@@ -17,6 +17,7 @@ header {
 }
 
 h1 a, h2 a{
+    white-space: nowrap;
     @include small-to-med-phone {
         font: italic 700 3rem $logo_font;
     }
@@ -53,18 +54,6 @@ footer {
     @extend %headerfooter_display;
     color: $mainlightcolor;
 
-    section {
-        &:nth-of-type(1), &:nth-of-type(2) {
-            margin-right: 15rem;
-        }
-    }
-
-    nav {
-        ul:nth-of-type(2) {
-            margin-left: 2rem;
-        }
-    }
-
     h4, h3 {
         font-size: 3rem;
         font-weight: 300;
@@ -98,16 +87,23 @@ footer {
         height: 6rem;
         padding: 0 1.5rem;
         background-color: $mainlightcolor;
-        margin-left: -.8rem;
+        margin-left: -1rem;
         color: transparent;
         background: white url("https://coneynicollete-fs.github.io/coneytransports/images/email.svg") no-repeat top;
 
-        &:hover {
-            background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailhover.svg") no-repeat top;
+        @media (any-hover:hover) {
+            &:hover {
+                background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailhover.svg") no-repeat top;
+            } 
         }
+
         &:active {
             background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailactive.svg") no-repeat top;
         }
+    }
+
+    .errorLabel {
+        padding: 1rem 0 0 0;
     }
 }
 
@@ -116,7 +112,7 @@ a {
 }
 
 #footerNav {
-    margin-right: 1.8rem;
+    margin-right: 3.8rem;
 }
 
 .quoteBtn {
@@ -149,10 +145,6 @@ a {
         font-size: 0;
         margin-right: 3rem;
         transition: color 0.1s ease-in-out;
-
-        &:hover {
-            color: $lightaccentcolor;
-        }
     }
 }
 
@@ -179,4 +171,8 @@ a {
 .copy {
     font-family: $logo_font;
     font-style: italic;
+}
+
+#thankYouMessage {
+    color: $lightaccentcolor;
 }

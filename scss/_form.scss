@@ -4,13 +4,10 @@ form {
     border: solid 1px $mainbgcolor;
     background-color: $lightaccentcolor;
 
-    h3 {
-        color: $maindarkcolor;
-    }
 
     h3, input, textarea, button {
         width: calc(100% - 4rem);
-        margin: 1rem 2rem;
+        margin: 2rem 2rem;
     }
 
     input, textarea {
@@ -43,8 +40,14 @@ form {
     }
 
     p {
-        margin-left: 2rem;
-    }
+        margin: 8rem 0 10rem 2rem;
+        background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/complete.svg");
+        background-repeat: no-repeat;
+        background-origin: padding-box;
+        padding-top: 28rem;
+        background-position-x: 60%;
+        background-size: 200px; 
+        }
 }
 
 label:not(.errorLabel) {

@@ -2,6 +2,7 @@ class Main {
     constructor() {
         const nav = new Navigation();
         const form = new FormValidation();
+        const subbed = new Subscribe();
     }
 
     static getInstance() {

@@ -1,28 +1,23 @@
 :target {
     @media (min-width: 300px) {
-        scroll-margin-top: 25rem;
-        scroll-snap-margin-top: 25rem;
+        scroll-margin-top: 20rem;
+        scroll-snap-margin-top: 20rem;
     }
 
     @media (min-width: 977px) {
-        scroll-margin-top: 12rem;
-        scroll-snap-margin-top: 12rem;
+        scroll-margin-top: 10rem;
+        scroll-snap-margin-top: 10rem;
     }
 }
 
 .currentScroll, .currentAlways {
-    color: $lightaccentcolor;
     text-shadow: 1.8px 1.8px 3px $darkaccentcolor;
     border-bottom: dashed 1.98px;
     padding-bottom: .2rem;
 }
 
 nav a{
-    transition: color 0.1s ease-in-out;
-
-    &:hover {
-        color: $lightaccentcolor;
-    }
+    transition: color 0.2s ease-in-out;
 }
 
 h1 a:hover, h2 a:hover {
@@ -39,11 +34,13 @@ h1 a:hover, h2 a:hover {
         margin-top: 0;
     }
 
-    &:hover {
-        color: $darkaccentcolor;
-        background-color: $lightaccentcolor;
-        border-color: $darkaccentcolor;
-        box-shadow: 3px 3px 5px rgba(59, 19, 19, 0.432) inset;
+    @media(any-hover: hover) {
+        &:hover {
+            color: $darkaccentcolor;
+            background-color: $lightaccentcolor;
+            border-color: $darkaccentcolor;
+            box-shadow: 3px 3px 5px rgba(59, 19, 19, 0.432) inset;
+        }
     }
 
     &:active {
@@ -56,9 +53,11 @@ form button, #careerspage button {
     transition: transform, background-color 0.3s ease-in-out;
     box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.397) inset;
 
-    &:hover {
-        color: $darkaccentcolor;
-        background-color: $fontcolor;
+    @media (any-hover: hover) {
+        &:hover {
+            color: $darkaccentcolor;
+            background-color: $fontcolor;
+        }
     }
 
     &:active {
