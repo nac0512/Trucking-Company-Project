@@ -66,13 +66,6 @@ form button, #careerspage button {
     }
 }
 
-.navbar {
-    @media (min-width:992px) {
-        padding: 0;
-        margin-top: -2.8rem;
-    }
-}
-
 .navbar-toggler {
     margin-top: .5rem;
 
@@ -84,4 +77,10 @@ form button, #careerspage button {
 .navbar-toggler-icon {
     width: 3rem;
     height: 3rem;
+}
+
+@media (min-width:992px) {
+    #navButton {
+        margin-top: 1.2rem;
+    }  
 }
