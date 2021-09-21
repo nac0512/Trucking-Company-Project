@@ -87,7 +87,7 @@ footer {
         height: 6rem;
         padding: 0 1.5rem;
         background-color: $mainlightcolor;
-        margin-left: -.8rem;
+        margin-left: -1rem;
         color: transparent;
         background: white url("https://coneynicollete-fs.github.io/coneytransports/images/email.svg") no-repeat top;
 
@@ -100,6 +100,10 @@ footer {
         &:active {
             background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailactive.svg") no-repeat top;
         }
+    }
+
+    .errorLabel {
+        padding: 1rem 0 0 0;
     }
 }
 
@@ -167,4 +171,8 @@ a {
 .copy {
     font-family: $logo_font;
     font-style: italic;
+}
+
+#thankYouMessage {
+    color: $lightaccentcolor;
 }
