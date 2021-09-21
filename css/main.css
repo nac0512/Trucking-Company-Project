@@ -323,13 +323,6 @@ form button:active, #careerspage button:active {
   transform: scale(0.98);
 }
 
-@media (min-width: 992px) {
-  .navbar {
-    padding: 0;
-    margin-top: -2.8rem;
-  }
-}
-
 .navbar-toggler {
   margin-top: .5rem;
 }
@@ -343,6 +336,12 @@ form button:active, #careerspage button:active {
 .navbar-toggler-icon {
   width: 3rem;
   height: 3rem;
+}
+
+@media (min-width: 992px) {
+  #navButton {
+    margin-top: 1.2rem;
+  }
 }
 
 #contactpage a {
@@ -580,7 +579,7 @@ div:first-of-type, div:last-of-type {
 
 #about {
   background-color: #EBEBEB;
-  padding-bottom: 5rem;
+  padding-bottom: 14rem;
 }
 
 #about h2 {
@@ -697,13 +696,13 @@ div:first-of-type, div:last-of-type {
 
 @media (min-width: 1110px) {
   #services form {
-    margin-top: 15%;
+    margin-top: 7%;
   }
 }
 
 @media (min-width: 1400px) {
   #services form {
-    margin-top: 10%;
+    margin-top: 5%;
   }
 }
 

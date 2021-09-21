@@ -17,23 +17,28 @@ class Subscribe {
         thankYou.innerHTML = "Thank you for subscribing to our newsletter!";
         thankYou.setAttribute("id", "thankYouMessage");
         document.querySelector("#subscribeHeader").after(thankYou);
-
        }
        else {
-           if(!document.querySelector("#subscribe").classList.contains("error")) {
-                let emailError = document.createElement("label");
+           if(!document.querySelector("#emailError")) {
+               let emailError = document.createElement("label");
                 emailError.setAttribute("id", "emailError");
                 emailError.setAttribute("class", "errorLabel");
                 emailError.setAttribute("aria-live", "polite");
                 emailError.innerHTML = "&#9656 Please enter a valid email address.";
                 document.querySelector("#subscribeBtn").after(emailError);
-                
             }
-            else {
-                if(document.querySelector("#subscribe").classList.contains("error")) {
-                    document.querySelector("#subscribe").classList.remove("error");
+        }
+
+        if (document.querySelector("#subscribeBtn")) {
+            document.querySelector("#subscribe").addEventListener("blur", function() {
+                if (document.querySelector("#emailError")) {
                     document.querySelector("#emailError").remove();
                 }
+            });
+        }
+        else {
+            if (document.querySelector("#emailError")) {
+                document.querySelector("#emailError").remove();
             }
         }
     }
