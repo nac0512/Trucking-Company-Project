@@ -423,13 +423,9 @@ form {
   background-color: #E6C2B2;
 }
 
-form h3 {
-  color: #121418;
-}
-
 form h3, form input, form textarea, form button {
   width: calc(100% - 4rem);
-  margin: 1rem 2rem;
+  margin: 2rem 2rem;
 }
 
 form input, form textarea {
@@ -466,7 +462,13 @@ form button {
 }
 
 form p {
-  margin-left: 2rem;
+  margin: 8rem 0 10rem 2rem;
+  background-image: url("/images/complete.svg");
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  padding-top: 28rem;
+  background-position-x: 60%;
+  background-size: 200px;
 }
 
 label:not(.errorLabel) {
@@ -651,6 +653,10 @@ div:first-of-type, div:last-of-type {
 #services h3 {
   color: #80242B;
   margin-bottom: .5rem;
+}
+
+#services .formSubmitted {
+  color: #121418;
 }
 
 #services li {
