@@ -18,6 +18,10 @@ html {
 }
 
 body {
-    font: 400 2rem/1.2 $main_font;
+    font: 400 2rem/1.4 $main_font;
     color: $fontcolor;
+}
+
+a:hover {
+    color: $lightaccentcolor;
 }
