@@ -266,6 +266,7 @@ a {
 }
 
 .currentScroll, .currentAlways {
+  color: #E6C2B2;
   text-shadow: 1.8px 1.8px 3px #80242B;
   border-bottom: dashed 1.98px;
   padding-bottom: .2rem;
