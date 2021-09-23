@@ -116,14 +116,17 @@ a {
 }
 
 .quoteBtn {
-    height: fit-content;
+    width: fit-content;
     border: 1px solid $lightaccentcolor;
     border-radius: 50rem;
-    color: $lightaccentcolor;
     background-color: $darkaccentcolor;
 
+    a {
+        color: $lightaccentcolor;
+    }
+
     @include small-to-med-phone {
-        @include gutters(.8rem, 1.5rem)
+        @include gutters(.8rem, .5rem)
     }
 
     @include med-phone-to-big-screen {
