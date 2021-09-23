@@ -24,7 +24,7 @@ class Subscribe {
                 emailError.setAttribute("id", "emailError");
                 emailError.setAttribute("class", "errorLabel");
                 emailError.setAttribute("aria-live", "polite");
-                emailError.innerHTML = "&#9656 Please enter a valid email address.";
+                emailError.innerHTML = "Please enter a valid email address.";
                 document.querySelector("#subscribeBtn").after(emailError);
             }
         }

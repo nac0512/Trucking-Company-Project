@@ -1,8 +1,16 @@
 #careerspage {
     background-color: $mainbgcolor;
+    overflow: hidden;
 
     p {
         min-height: 8rem;
+        max-width: 115rem;
+        margin: 0 auto;
+    }
+
+    #mainpar {
+        text-align: justify;
+        margin-top: 2rem;
     }
 
     section {
@@ -36,28 +44,32 @@
         text-align: center;
     }
 
-    #drvBenefits {
-        @media (max-width: 767px) {
-            margin-top: -2rem;
-        }
-    }
-
     ul {
-        margin: 5rem 0;
         color: $maindarkcolor;
     }
 
-    @media (min-width: 780px) and (max-width: 992px) {
+    @media (min-width: 768px) and (max-width: 992px) {
         .col-md-4 {
             flex: 0 0 auto;
-            width: 33.33333333%;
+            width: 50%;
         }
+    }
+}
+
+#positions {
+    @media (min-width: 992px) {
+        margin-left: 8rem;
     }
 }
 
 #positions li {
     color: $fontcolor;
-    margin-bottom: 5rem;
+    margin: 5rem 0 2rem 0;
+    text-align: center;
+
+    @media (min-width: 1000px) {
+        margin: 8rem 5rem 8rem 0;
+    }
 }
 
 #apply {
@@ -93,14 +105,33 @@
     }
 }
 
-#wrkBenefits {
+.benefits li {
+    list-style-type: "\25b8" + " ";
+}
 
-    @media (min-width: 1000px) {
-        padding-left: 15rem;
+#drvRequirements, #drvBenefits, #wrkBenefits {
+    margin: 2rem 0 5rem 25%;
+
+    @media (min-width:550px) {
+        margin-left: 35%;
     }
+}
 
-    @media (min-width: 1500px) {
-        padding-left: 25rem;
+#drvRequirements {
+    @media (min-width:830px) {
+        margin-left: 15%;
+    }
+}
+
+#drvBenefits {
+    @media (min-width:830px) {
+        margin-left: 0%;
+    }
+}
+
+#wrkBenefits {
+    @media (min-width:830px) {
+        margin-left: 40%;
     }
 }
 
@@ -135,4 +166,3 @@
 
     @include careersiconslarge($cdlimagelg, -18%);
 }
-

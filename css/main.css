@@ -389,14 +389,45 @@ form button:active, #careerspage button:active {
   font-size: 2rem;
 }
 
-.cntinfo {
+dl {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  min-width: 38rem;
+  max-width: 50rem;
+}
+
+dt {
+  margin-top: 2rem;
   color: #80242B;
+  font-weight: inherit;
+  flex: 0 0 37%;
+}
+
+@media (min-width: 1300px) {
+  dt {
+    flex: 0 0 30%;
+  }
+}
+
+dd {
+  color: #121418;
+  margin-top: 2.9rem;
+  flex: 0 0 63%;
+}
+
+@media (min-width: 1300px) {
+  dd {
+    flex: 0 0 70%;
+  }
 }
 
 #call::before {
   content: "call";
   font-family: 'Material Icons';
   font-size: 3.5rem;
+  color: #121418;
   vertical-align: middle;
   padding-right: 2rem;
 }
@@ -405,6 +436,7 @@ form button:active, #careerspage button:active {
   content: "fax";
   font-family: 'Material Icons';
   font-size: 3.5rem;
+  color: #121418;
   vertical-align: middle;
   padding-right: 2rem;
 }
@@ -413,6 +445,7 @@ form button:active, #careerspage button:active {
   content: "email";
   font-family: 'Material Icons';
   font-size: 3.5rem;
+  color: #121418;
   vertical-align: middle;
   padding-right: 2rem;
 }
@@ -421,6 +454,7 @@ form button:active, #careerspage button:active {
   content: "place";
   font-family: 'Material Icons';
   font-size: 3.5rem;
+  color: #121418;
   vertical-align: middle;
   padding-right: 2rem;
 }
@@ -495,53 +529,68 @@ div:first-of-type, div:last-of-type {
   display: inherit;
 }
 
+.errorLabel::before {
+  content: "▸ ";
+}
+
 .error {
   border: solid 5px red;
 }
 
 #cta {
-  background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/truck.jpg");
+  background: url("https://coneynicollete-fs.github.io/coneytransports/images/truck.jpg") rgba(0, 0, 0, 0.247);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: 30%;
+  background-blend-mode: multiply;
+  overflow: hidden;
 }
 
 @media (min-width: 300px) {
   #cta {
-    padding: 0rem 4rem 5rem 4rem;
+    padding: 0rem 4rem;
   }
 }
 
 @media (min-width: 400px) {
   #cta {
-    padding: 18rem 8rem 15rem 8rem;
+    padding: 0 8rem;
+  }
+}
+
+@media (min-width: 700px) {
+  #cta {
+    background-size: 100% auto;
+    background-position: unset;
   }
 }
 
 #cta h2 {
   color: #121418;
+  text-shadow: 0.5px 0.5px 5px #ffffff;
 }
 
 @media (min-width: 300px) {
   #cta h2 {
-    padding-top: 23rem;
+    margin-top: 25rem;
   }
 }
 
 @media (min-width: 450px) {
   #cta h2 {
-    padding-top: 12rem;
+    margin-top: 12rem;
   }
 }
 
 @media (min-width: 665px) {
   #cta h2 {
-    padding-top: 20rem;
+    margin-top: 20rem;
   }
 }
 
 @media (min-width: 992px) {
   #cta h2 {
-    padding-top: 35rem;
+    margin-top: 35rem;
   }
 }
 
@@ -828,10 +877,18 @@ div:first-of-type, div:last-of-type {
 
 #careerspage {
   background-color: #EBEBEB;
+  overflow: hidden;
 }
 
 #careerspage p {
   min-height: 8rem;
+  max-width: 115rem;
+  margin: 0 auto;
+}
+
+#careerspage #mainpar {
+  text-align: justify;
+  margin-top: 2rem;
 }
 
 @media (min-width: 300px) {
@@ -867,27 +924,33 @@ div:first-of-type, div:last-of-type {
   text-align: center;
 }
 
-@media (max-width: 767px) {
-  #careerspage #drvBenefits {
-    margin-top: -2rem;
-  }
-}
-
 #careerspage ul {
-  margin: 5rem 0;
   color: #121418;
 }
 
-@media (min-width: 780px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   #careerspage .col-md-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  #positions {
+    margin-left: 8rem;
   }
 }
 
 #positions li {
   color: #707070;
-  margin-bottom: 5rem;
+  margin: 5rem 0 2rem 0;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  #positions li {
+    margin: 8rem 5rem 8rem 0;
+  }
 }
 
 #apply {
@@ -928,15 +991,35 @@ div:first-of-type, div:last-of-type {
   }
 }
 
-@media (min-width: 1000px) {
-  #wrkBenefits {
-    padding-left: 15rem;
+.benefits li {
+  list-style-type: "▸ ";
+}
+
+#drvRequirements, #drvBenefits, #wrkBenefits {
+  margin: 2rem 0 5rem 25%;
+}
+
+@media (min-width: 550px) {
+  #drvRequirements, #drvBenefits, #wrkBenefits {
+    margin-left: 35%;
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 830px) {
+  #drvRequirements {
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 830px) {
+  #drvBenefits {
+    margin-left: 0%;
+  }
+}
+
+@media (min-width: 830px) {
   #wrkBenefits {
-    padding-left: 25rem;
+    margin-left: 40%;
   }
 }
 
@@ -952,7 +1035,7 @@ div:first-of-type, div:last-of-type {
 @media (min-width: 767.5px) {
   #dedCareers {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/repeatlarge.svg");
-    margin-right: 10rem;
+    padding-right: 2rem;
     background-origin: padding-box;
     padding-top: 18rem;
     background-position: 30% 2rem;
@@ -975,7 +1058,7 @@ div:first-of-type, div:last-of-type {
 @media (min-width: 767.5px) {
   #regCareers {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/routelarge.svg");
-    margin-right: 10rem;
+    padding-right: 2rem;
     background-origin: padding-box;
     padding-top: 18rem;
     background-position: 30% 2rem;
@@ -998,7 +1081,7 @@ div:first-of-type, div:last-of-type {
 @media (min-width: 767.5px) {
   #natCareers {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/maplarge.svg");
-    margin-right: 10rem;
+    padding-right: 2rem;
     background-origin: padding-box;
     padding-top: 18rem;
     background-position: 30% 2rem;
@@ -1021,7 +1104,7 @@ div:first-of-type, div:last-of-type {
 @media (min-width: 767.5px) {
   #cdlCareers {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/schoollarge.svg");
-    margin-right: 10rem;
+    padding-right: 2rem;
     background-origin: padding-box;
     padding-top: 18rem;
     background-position: 30% 2rem;

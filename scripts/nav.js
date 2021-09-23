@@ -32,7 +32,6 @@ class Navigation {
 
     toggle(e) {
         document.querySelector("#navButton").classList.toggle("collapsed");
-        document.querySelector("#navButton").setAttribute("aria-expanded", "false");
         document.querySelector("#navbarToggleExternalContent").classList.toggle("show");
     }
 }
