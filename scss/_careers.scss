@@ -82,7 +82,7 @@
         background-color: $darkaccentcolor;
         padding: 0rem 6rem;
         height: 5rem;
-        margin: 1.5rem 0;
+        margin: 2rem 0;
 
 
         @media (min-width: 550px) {
@@ -137,32 +137,32 @@
 
 #dedCareers{
     @include small-to-med-phone {
-        @include servicescareersiconssmall ($dedimagesm)
+        @include servicescareersiconssmall ($dediconsm)
     }
 
-    @include careersiconslarge($dedimagelg, -18%);
+    @include careersiconslarge($dediconlg);
 }
 
 #regCareers{
     @include small-to-med-phone {
-        @include servicescareersiconssmall ($regimagesm);
+        @include servicescareersiconssmall ($regiconsm);
     }
 
-    @include careersiconslarge($regimagelg, -20%);
+    @include careersiconslarge($regiconlg);
 }
 
 #natCareers{
     @include small-to-med-phone {
-        @include servicescareersiconssmall ($natimagesm);
+        @include servicescareersiconssmall ($naticonsm);
     }
 
-    @include careersiconslarge($natimagelg, -20%);
+    @include careersiconslarge($naticonlg);
 }
 
 #cdlCareers{
     @include small-to-med-phone {
-        @include servicescareersiconssmall ($cdlimagesm)
+        @include servicescareersiconssmall ($cdliconsm)
     }
 
-    @include careersiconslarge($cdlimagelg, -18%);
+    @include careersiconslarge($cdliconlg);
 }

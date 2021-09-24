@@ -58,48 +58,36 @@
 
 #dedServices{
     @include small-to-med-phone {
-        @include servicescareersiconssmall($dedimagesm);
+        @include servicescareersiconssmall($dediconsm);
     }
 
-    @include smallservicesscreen($dedimagelg);
+    @include smallservicesscreen($dediconlg);
 
-    @include medservicesscreen($dedimagesm);
+    @include medservicesscreen($dediconsm);
 
-    @include lgservicesscreen($dedimagelg);
+    @include lgservicesscreen($dediconlg);
 }
 
 #regServices{
     @include small-to-med-phone {
-        @include servicescareersiconssmall ($regimagesm)
+        @include servicescareersiconssmall ($regiconsm)
     }
 
-    @media (min-width: 650px) {
-        @include servicesiconslarge($regimagelg);
-    }
+    @include smallservicesscreen($regiconlg);
 
-    @media (min-width: 992px) {
-        @include servicescareersiconssmall($regimagesm);
-    }
+    @include medservicesscreen($regiconsm);
 
-    @media (min-width: 1400px) {
-        @include servicesiconslarge($regimagelg);
-    }
+    @include lgservicesscreen($regiconlg);
 }
 
 #natServices{
     @include small-to-med-phone {
-        @include servicescareersiconssmall ($natimagesm)
+        @include servicescareersiconssmall ($naticonsm)
     }
 
-    @media (min-width: 650px) {
-        @include servicesiconslarge($natimagelg);
-    }
+    @include smallservicesscreen($naticonlg);
 
-    @media (min-width: 992px) {
-        @include servicescareersiconssmall($natimagesm);
-    }
+    @include medservicesscreen($naticonsm);
 
-    @media (min-width: 1400px) {
-        @include servicesiconslarge($natimagelg);
-    }
+    @include lgservicesscreen($naticonlg);
 }

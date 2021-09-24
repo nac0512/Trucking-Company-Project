@@ -1,15 +1,14 @@
 #about {
     background-color: $mainbgcolor;
-    padding-bottom: 14rem;
 
     h2 {
         text-align: center;
-        color: $darkaccentcolor;
-        padding-top: 8rem;
+        color: $maindarkcolor;
+        padding-top: 5rem;
     }
 
     h3 {
-        color: $lightaccentcolor;
+        color: $darkaccentcolor;
         margin-bottom: .5rem;
     }
 
@@ -38,11 +37,42 @@
 
         @media (min-width: 992px) {
             max-width: 35rem;
-            margin-bottom: 12rem;
         }
 
         @media (min-width: 1550px) {
             max-width: 45rem;
         }
     }
+}
+
+#mission {
+    @include small-to-med-phone {
+        @include abouticonssmall($missioniconsm);
+    }
+
+    @include abouticonslarge($missioniconlg);
+}
+
+#values {
+    @include small-to-med-phone {
+        @include abouticonssmall($valuesiconsm);
+    }
+
+    @include abouticonslarge($valuesiconlg);
+}
+
+#vision {
+    @include small-to-med-phone {
+        @include abouticonssmall($visioniconsm);
+    }
+
+    @include abouticonslarge($visioniconlg);
+}
+
+#core{
+    @include small-to-med-phone {
+        @include abouticonssmall($coreiconsm);
+    }
+
+    @include abouticonslarge($coreiconlg);
 }

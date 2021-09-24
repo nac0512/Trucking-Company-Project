@@ -23,7 +23,7 @@
 @mixin servicescareersiconssmall($url) {
     background-image: url($url);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 40% 50%;
     padding-left: 0;
 }
 
@@ -36,18 +36,14 @@
     padding-left: 15rem;
 }
 
-@mixin careersiconslarge($url, $margin) {
+@mixin careersiconslarge($url) {
     @media (min-width: 767.5px) {
         background-image: url($url);
         padding-right: 2rem;
         background-origin: padding-box;
         padding-top: 18rem;
-        background-position: 30% 2rem;
+        background-position: 46% 2rem;
         background-size: 130px; 
-        
-        h3 {
-            margin-left: $margin;
-        }
     }
 }
 
@@ -73,6 +69,25 @@
     content: $code;
     font: 400 4rem "Font Awesome 5 Brands";
     text-shadow:  2.5px 2.5px 5px $fontcolor;
+}
+
+@mixin abouticonssmall($url) {
+    background-image: url($url);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+    padding-left: 0;
+}
+
+@mixin abouticonslarge($url) {
+    @media (min-width: 850px) {
+        background-image: url($url);
+        padding-right: 2rem;
+        background-origin: padding-box;
+        padding-top: 18rem;
+        background-position: 30% 2rem;
+        background-size: 130px; 
+    }
 }
 
 // Placeholders
