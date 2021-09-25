@@ -26,7 +26,7 @@ class FormValidation {
                 `<h3 class="formSubmitted">We've recieved your submission</h3>
                 <p>We appreciate your business. We are working on your request and will get back to you within 48 business hours.</p>`;
             }
-            else if (formTyype == "contactForm") {
+            else if (formType == "contactForm") {
                 e.target.parentNode.innerHTML = 
                 `<h3 class="formSubmitted">Thank you!</h3>
                 <p>Your message has been sent successfully. Please allow up to 48 business hours for someone to reach out to you. Feel free to reach out with any questions or concerns.</p>`;
