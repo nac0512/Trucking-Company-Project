@@ -12,7 +12,7 @@ form {
 
     input, textarea {
         background-color: rgba(255, 255, 255, .6);
-        padding: 1.5rem 2rem;
+        @include gutters(1.5rem, 2rem);
 
         &:focus {
             border: solid 3px $fontcolor;
@@ -47,15 +47,15 @@ form {
         padding-top: 28rem;
         background-position-x: 60%;
         background-size: 200px; 
-        }
+    }
+
+    div:first-of-type, div:last-of-type {
+        width: 100%;
+    }
 }
 
 label:not(.errorLabel) {
     display: none;
-}
-
-div:first-of-type, div:last-of-type {
-    width: 100%;
 }
 
 .errorLabel {
@@ -64,6 +64,10 @@ div:first-of-type, div:last-of-type {
     padding: 0 0 2rem 2rem;
     margin-right: 1rem;
     display: inherit;
+
+    &::before {
+        content: "\25b8" + " ";
+    }
 }
 
 .error {

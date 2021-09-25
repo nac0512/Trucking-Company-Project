@@ -2,6 +2,7 @@ header {
     @extend %headerfooter_display;
     position: sticky;
     top: 0;
+    z-index: 1;
 
     li {
         margin: 0 1rem;
@@ -67,41 +68,6 @@ footer {
         max-width: 50rem;
     }
 
-    input {
-        height: 6rem;
-        border: 2px solid $mainlightcolor;
-        color: $lightaccentcolor;
-        background-color: $darkaccentcolor;
-        text-indent: 1rem;
-
-        @include small-to-med-phone {
-            max-width: 65%;
-        }
-    
-        @include med-phone-to-big-screen {
-            width: 75%;
-        }
-    }
-
-    button {
-        height: 6rem;
-        padding: 0 1.5rem;
-        background-color: $mainlightcolor;
-        margin-left: -1rem;
-        color: transparent;
-        background: white url("https://coneynicollete-fs.github.io/coneytransports/images/email.svg") no-repeat top;
-
-        @media (any-hover:hover) {
-            &:hover {
-                background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailhover.svg") no-repeat top;
-            } 
-        }
-
-        &:active {
-            background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailactive.svg") no-repeat top;
-        }
-    }
-
     .errorLabel {
         padding: 1rem 0 0 0;
     }
@@ -116,14 +82,17 @@ a {
 }
 
 .quoteBtn {
-    height: fit-content;
+    width: fit-content;
     border: 1px solid $lightaccentcolor;
     border-radius: 50rem;
-    color: $lightaccentcolor;
     background-color: $darkaccentcolor;
 
+    a {
+        color: $lightaccentcolor;
+    }
+
     @include small-to-med-phone {
-        @include gutters(.8rem, 1.5rem)
+        @include gutters(.8rem, .5rem)
     }
 
     @include med-phone-to-big-screen {
@@ -175,4 +144,46 @@ a {
 
 #thankYouMessage {
     color: $lightaccentcolor;
+}
+
+.subscribeSection {
+    font-size: 0;
+
+    p, button, input {
+        font-size: 2rem;
+    }
+
+    input {
+        height: 6rem;
+        border: 2px solid $mainlightcolor;
+        color: $lightaccentcolor;
+        background-color: $darkaccentcolor;
+        text-indent: 1rem;
+
+        @include small-to-med-phone {
+            min-width: 65%;
+        }
+    
+        @media (min-width: 550px) {
+            min-width: 75%;
+        }
+    }
+
+    button {
+        height: 6rem;
+        @include gutters(0, 1.5rem);
+        background-color: $mainlightcolor;
+        color: transparent;
+        background: white url("https://coneynicollete-fs.github.io/coneytransports/images/email.svg") no-repeat top;
+
+        @media (any-hover:hover) {
+            &:hover {
+                background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailhover.svg") no-repeat top;
+            } 
+        }
+
+        &:active {
+            background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailactive.svg") no-repeat top;
+        }
+    }
 }

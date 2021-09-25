@@ -41,7 +41,7 @@ class FormValidation {
                     nameError.setAttribute("id", "nameError");
                     nameError.setAttribute("class", "errorLabel");
                     nameError.setAttribute("aria-live", "polite");
-                    nameError.innerHTML = "&#9656 Please enter your full name.";
+                    nameError.innerHTML = "Please enter your full name.";
                     document.querySelector("#name").after(nameError);
                 }
             }
@@ -59,7 +59,7 @@ class FormValidation {
                     phoneError.setAttribute("id", "phoneError");
                     phoneError.setAttribute("class", "errorLabel");
                     phoneError.setAttribute("aria-live", "polite");
-                    phoneError.innerHTML = "&#9656 Please enter a phone number with no dashes, including area code.";
+                    phoneError.innerHTML = "Please enter a phone number with no dashes, including area code.";
                     document.querySelector("#phone").after(phoneError);
                 }
             }
@@ -77,7 +77,7 @@ class FormValidation {
                     emailError.setAttribute("id", "emailError");
                     emailError.setAttribute("class", "errorLabel");
                     emailError.setAttribute("aria-live", "polite");
-                    emailError.innerHTML = "&#9656 Please enter a valid email address.";
+                    emailError.innerHTML = "Please enter a valid email address.";
                     document.querySelector("#email").after(emailError);
                 }
             }
@@ -95,7 +95,7 @@ class FormValidation {
                     detailsError.setAttribute("id", "detailsError");
                     detailsError.setAttribute("class", "errorLabel");
                     detailsError.setAttribute("aria-live", "polite");
-                    detailsError.innerHTML = "&#9656 Don't forget to let us know what you need!";
+                    detailsError.innerHTML = "Don't forget to let us know what you need!";
                     document.querySelector("#details").after(detailsError);
                 }
             }

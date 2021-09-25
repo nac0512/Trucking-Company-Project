@@ -8,14 +8,16 @@ class Navigation {
         let current = "";
 
             sections.forEach((section) => {
+                const smallToMedScreen = window.matchMedia("(max-width: 995px)");
                 const sectionTop = section.offsetTop;
-                if(window.matchMedia("(min-width: 300px)")) {
-                    if (pageYOffset >= sectionTop - 755) {
+
+                if(smallToMedScreen.matches) {
+                    if (pageYOffset >= sectionTop - 300) {
                         current = section.getAttribute("id");
                     }
                 }
-                else if(window.matchMedia("(min-width: 996px)")) {
-                    if (pageYOffset >= sectionTop - 235) {
+                else {
+                    if (pageYOffset >= sectionTop - 120) {
                         current = section.getAttribute("id");
                     }
                 }
@@ -32,7 +34,6 @@ class Navigation {
 
     toggle(e) {
         document.querySelector("#navButton").classList.toggle("collapsed");
-        document.querySelector("#navButton").setAttribute("aria-expanded", "false");
         document.querySelector("#navbarToggleExternalContent").classList.toggle("show");
     }
 }

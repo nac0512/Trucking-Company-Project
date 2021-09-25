@@ -41,8 +41,34 @@
     }
 }
 
-.cntinfo {
+dl {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    min-width: 38rem;
+    max-width: 50rem;
+}
+
+dt {
+    margin-top: 2rem;
     color: $darkaccentcolor;
+    font-weight: inherit;
+    flex: 0 0 37%;
+
+    @media (min-width: 1300px) {
+        flex: 0 0 30%;
+    }
+}
+
+dd {
+    color: $maindarkcolor;
+    margin-top: 2.9rem;
+    flex: 0 0 63%;
+
+    @media (min-width: 1300px) {
+        flex: 0 0 70%;
+    }
 }
 
 #call::before {

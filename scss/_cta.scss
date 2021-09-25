@@ -1,34 +1,47 @@
 #cta {
-    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/truck.jpg");
+    background: url("https://coneynicollete-fs.github.io/coneytransports/images/truck.jpg") rgba(0, 0, 0, 0.247);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: 30%;
+    background-blend-mode: multiply;
+    overflow: hidden;
 
     @include small-to-med-phone {
-        padding: 0rem 4rem 5rem 4rem;
+        @include gutters(0, 4rem);
 
     }
 
     @include med-phone-to-big-screen {
-        padding: 18rem 8rem 15rem 8rem;
+        @include gutters(0, 8rem);
+    }
+
+    @media (min-width: 1200px) {
+        background-size: 100% auto;
+        background-position: unset;
     }
 
     h2 {
         color: $maindarkcolor;
+        text-shadow: .5px .5px 5px $mainlightcolor;
 
         @include small-to-med-phone {
-            padding-top: 23rem;
+            margin-top: 5rem;
         }
 
         @media (min-width: 450px) {
-            padding-top: 12rem;
+            margin-top: 27.5rem;
         }
 
         @media (min-width: 665px) {
-            padding-top: 20rem;
+            margin-top: 30.5rem;
         }
 
         @media (min-width: 992px) {
-            padding-top: 35rem;
+            margin-top: 47rem;
+        }
+
+        @media (min-width: 1770px) {
+            margin-top: 57rem;
         }
     }
 
@@ -40,24 +53,32 @@
         0 0.08rem  $maindarkcolor,
         -0.08rem 0 $maindarkcolor,
         0 -0.08rem $maindarkcolor;
+
+        &:nth-of-type(2) {
+            margin-bottom: 12rem;
+        }
     }
+}
+
+.goToServices{
+    background-color: $darkaccentcolor;
+    border: solid 1px $lightaccentcolor;
+    border-radius: 50rem;
 
     a {
         color: $lightaccentcolor;
-        background-color: $darkaccentcolor;
-        border: solid 1px $lightaccentcolor;
-        border-radius: 50rem;
+        text-shadow: none;
+    }
 
-        @include small-to-med-phone {
-            @include gutters(1rem, 25%)
-        }
-    
-        @include med-phone-to-big-screen {
-            @include gutters(1.5rem, 40%)
-        }
-    
-        @media (min-width: 650px) {
-            padding: 1.5rem 22rem;
-        }
+    @include small-to-med-phone {
+        @include gutters(1rem, 38%)
+    }
+
+    @include med-phone-to-big-screen {
+        @include gutters(1.5rem, 40%)
+    }
+
+    @media (min-width: 650px) {
+        @include gutters(1.5rem, 22rem);
     }
 }

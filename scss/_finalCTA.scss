@@ -1,0 +1,32 @@
+#finalCTA {
+    background-color: $lightaccentcolor;
+    
+    @include small-to-med-phone {
+        @include gutters(3rem, 4rem);
+    }
+
+    @include med-phone-to-big-screen {
+        @include gutters(3rem, 8rem);
+    }
+
+    p {
+        width: fit-content;
+        margin: 0 auto;
+        color: $lightaccentcolor;
+        border-radius: 50rem;
+        background-color: $darkaccentcolor;
+        @include gutters(1.5rem, 6rem);
+
+        @media (min-width: 550px) {
+            @include gutters(1.5rem, 10rem);
+        }
+
+        @media (min-width: 800px) {
+            @include gutters(1.5rem, 15rem);
+        }
+
+        @media (min-width: 1500px) {
+            @include gutters(1.5rem, 22rem);
+        }
+    }
+}

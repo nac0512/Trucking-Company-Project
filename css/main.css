@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400;500;700&display=swap");
-html, body, header, main, footer, h1, h2, h3, h4, nav, section, ul, li, p, a, form, div, label, input, textarea, button {
+html, body, header, main, footer, h1, h2, h3, h4, h5, h6, nav, section, ul, li, p, a, form, div, label, input, textarea, button {
   margin: 0;
   padding: 0;
   font-size: 100%;
@@ -48,6 +48,7 @@ header, footer {
 header {
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 header li {
@@ -129,45 +130,6 @@ footer p {
   max-width: 50rem;
 }
 
-footer input {
-  height: 6rem;
-  border: 2px solid #ffffff;
-  color: #E6C2B2;
-  background-color: #80242B;
-  text-indent: 1rem;
-}
-
-@media (min-width: 300px) {
-  footer input {
-    max-width: 65%;
-  }
-}
-
-@media (min-width: 400px) {
-  footer input {
-    width: 75%;
-  }
-}
-
-footer button {
-  height: 6rem;
-  padding: 0 1.5rem;
-  background-color: #ffffff;
-  margin-left: -1rem;
-  color: transparent;
-  background: white url("https://coneynicollete-fs.github.io/coneytransports/images/email.svg") no-repeat top;
-}
-
-@media (any-hover: hover) {
-  footer button:hover {
-    background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailhover.svg") no-repeat top;
-  }
-}
-
-footer button:active {
-  background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailactive.svg") no-repeat top;
-}
-
 footer .errorLabel {
   padding: 1rem 0 0 0;
 }
@@ -181,16 +143,19 @@ a {
 }
 
 .quoteBtn {
-  height: fit-content;
+  width: fit-content;
   border: 1px solid #E6C2B2;
   border-radius: 50rem;
-  color: #E6C2B2;
   background-color: #80242B;
+}
+
+.quoteBtn a {
+  color: #E6C2B2;
 }
 
 @media (min-width: 300px) {
   .quoteBtn {
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 0.5rem;
   }
 }
 
@@ -251,10 +216,56 @@ a {
   color: #E6C2B2;
 }
 
+.subscribeSection {
+  font-size: 0;
+}
+
+.subscribeSection p, .subscribeSection button, .subscribeSection input {
+  font-size: 2rem;
+}
+
+.subscribeSection input {
+  height: 6rem;
+  border: 2px solid #ffffff;
+  color: #E6C2B2;
+  background-color: #80242B;
+  text-indent: 1rem;
+}
+
+@media (min-width: 300px) {
+  .subscribeSection input {
+    min-width: 65%;
+  }
+}
+
+@media (min-width: 550px) {
+  .subscribeSection input {
+    min-width: 75%;
+  }
+}
+
+.subscribeSection button {
+  height: 6rem;
+  padding: 0 1.5rem;
+  background-color: #ffffff;
+  color: transparent;
+  background: white url("https://coneynicollete-fs.github.io/coneytransports/images/email.svg") no-repeat top;
+}
+
+@media (any-hover: hover) {
+  .subscribeSection button:hover {
+    background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailhover.svg") no-repeat top;
+  }
+}
+
+.subscribeSection button:active {
+  background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailactive.svg") no-repeat top;
+}
+
 @media (min-width: 300px) {
   :target {
-    scroll-margin-top: 20rem;
-    scroll-snap-margin-top: 20rem;
+    scroll-margin-top: 25rem;
+    scroll-snap-margin-top: 25rem;
   }
 }
 
@@ -280,46 +291,40 @@ h1 a:hover, h2 a:hover {
   color: #ffffff;
 }
 
-.quoteBtn, #cta a {
-  display: table;
-  margin: -1.5rem 0;
+.quoteBtn, .goToServices {
   transition: transform, background-color 0.3s ease-in-out;
   box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.164) inset;
 }
 
-@media (min-width: 992px) {
-  .quoteBtn, #cta a {
-    margin-top: 0;
-  }
-}
-
 @media (any-hover: hover) {
-  .quoteBtn:hover, #cta a:hover {
-    color: #80242B;
+  .quoteBtn:hover, .goToServices:hover {
     background-color: #E6C2B2;
     border-color: #80242B;
     box-shadow: 3px 3px 5px rgba(59, 19, 19, 0.432) inset;
   }
+  .quoteBtn:hover a, .goToServices:hover a {
+    color: #80242B;
+  }
 }
 
-.quoteBtn:active, #cta a:active {
+.quoteBtn:active, .goToServices:active {
   transform: scale(0.93);
 }
 
-form button, #careerspage button {
+form button, #careerspage button, #finalCTA p {
   border: solid 1px #707070;
   transition: transform, background-color 0.3s ease-in-out;
   box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.397) inset;
 }
 
 @media (any-hover: hover) {
-  form button:hover, #careerspage button:hover {
+  form button:hover, #careerspage button:hover, #finalCTA p:hover {
     color: #80242B;
     background-color: #707070;
   }
 }
 
-form button:active, #careerspage button:active {
+form button:active, #careerspage button:active, #finalCTA p:active {
   transform: scale(0.98);
 }
 
@@ -389,14 +394,45 @@ form button:active, #careerspage button:active {
   font-size: 2rem;
 }
 
-.cntinfo {
+dl {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  min-width: 38rem;
+  max-width: 50rem;
+}
+
+dt {
+  margin-top: 2rem;
   color: #80242B;
+  font-weight: inherit;
+  flex: 0 0 37%;
+}
+
+@media (min-width: 1300px) {
+  dt {
+    flex: 0 0 30%;
+  }
+}
+
+dd {
+  color: #121418;
+  margin-top: 2.9rem;
+  flex: 0 0 63%;
+}
+
+@media (min-width: 1300px) {
+  dd {
+    flex: 0 0 70%;
+  }
 }
 
 #call::before {
   content: "call";
   font-family: 'Material Icons';
   font-size: 3.5rem;
+  color: #121418;
   vertical-align: middle;
   padding-right: 2rem;
 }
@@ -405,6 +441,7 @@ form button:active, #careerspage button:active {
   content: "fax";
   font-family: 'Material Icons';
   font-size: 3.5rem;
+  color: #121418;
   vertical-align: middle;
   padding-right: 2rem;
 }
@@ -413,6 +450,7 @@ form button:active, #careerspage button:active {
   content: "email";
   font-family: 'Material Icons';
   font-size: 3.5rem;
+  color: #121418;
   vertical-align: middle;
   padding-right: 2rem;
 }
@@ -421,13 +459,14 @@ form button:active, #careerspage button:active {
   content: "place";
   font-family: 'Material Icons';
   font-size: 3.5rem;
+  color: #121418;
   vertical-align: middle;
   padding-right: 2rem;
 }
 
 form {
   max-width: 65rem;
-  border: solid 1px #EBEBEB;
+  border: solid 1px #ebebeb71;
   background-color: #E6C2B2;
 }
 
@@ -479,12 +518,12 @@ form p {
   background-size: 200px;
 }
 
-label:not(.errorLabel) {
-  display: none;
+form div:first-of-type, form div:last-of-type {
+  width: 100%;
 }
 
-div:first-of-type, div:last-of-type {
-  width: 100%;
+label:not(.errorLabel) {
+  display: none;
 }
 
 .errorLabel {
@@ -495,53 +534,74 @@ div:first-of-type, div:last-of-type {
   display: inherit;
 }
 
+.errorLabel::before {
+  content: "▸ ";
+}
+
 .error {
   border: solid 5px red;
 }
 
 #cta {
-  background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/truck.jpg");
+  background: url("https://coneynicollete-fs.github.io/coneytransports/images/truck.jpg") rgba(0, 0, 0, 0.247);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: 30%;
+  background-blend-mode: multiply;
+  overflow: hidden;
 }
 
 @media (min-width: 300px) {
   #cta {
-    padding: 0rem 4rem 5rem 4rem;
+    padding: 0 4rem;
   }
 }
 
 @media (min-width: 400px) {
   #cta {
-    padding: 18rem 8rem 15rem 8rem;
+    padding: 0 8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #cta {
+    background-size: 100% auto;
+    background-position: unset;
   }
 }
 
 #cta h2 {
   color: #121418;
+  text-shadow: 0.5px 0.5px 5px #ffffff;
 }
 
 @media (min-width: 300px) {
   #cta h2 {
-    padding-top: 23rem;
+    margin-top: 5rem;
   }
 }
 
 @media (min-width: 450px) {
   #cta h2 {
-    padding-top: 12rem;
+    margin-top: 27.5rem;
   }
 }
 
 @media (min-width: 665px) {
   #cta h2 {
-    padding-top: 20rem;
+    margin-top: 30.5rem;
   }
 }
 
 @media (min-width: 992px) {
   #cta h2 {
-    padding-top: 35rem;
+    margin-top: 47rem;
+  }
+}
+
+@media (min-width: 1770px) {
+  #cta h2 {
+    margin-top: 57rem;
   }
 }
 
@@ -552,44 +612,51 @@ div:first-of-type, div:last-of-type {
   text-shadow: 0.08rem 0 #121418, 0 0.08rem #121418, -0.08rem 0 #121418, 0 -0.08rem #121418;
 }
 
-#cta a {
-  color: #E6C2B2;
+#cta p:nth-of-type(2) {
+  margin-bottom: 12rem;
+}
+
+.goToServices {
   background-color: #80242B;
   border: solid 1px #E6C2B2;
   border-radius: 50rem;
 }
 
+.goToServices a {
+  color: #E6C2B2;
+  text-shadow: none;
+}
+
 @media (min-width: 300px) {
-  #cta a {
-    padding: 1rem 25%;
+  .goToServices {
+    padding: 1rem 38%;
   }
 }
 
 @media (min-width: 400px) {
-  #cta a {
+  .goToServices {
     padding: 1.5rem 40%;
   }
 }
 
 @media (min-width: 650px) {
-  #cta a {
+  .goToServices {
     padding: 1.5rem 22rem;
   }
 }
 
 #about {
-  background-color: #EBEBEB;
-  padding-bottom: 14rem;
+  background-color: #ebebeb71;
 }
 
 #about h2 {
   text-align: center;
-  color: #80242B;
-  padding-top: 8rem;
+  color: #121418;
+  padding-top: 5rem;
 }
 
 #about h3 {
-  color: #E6C2B2;
+  color: #80242B;
   margin-bottom: .5rem;
 }
 
@@ -625,13 +692,96 @@ div:first-of-type, div:last-of-type {
 @media (min-width: 992px) {
   #about li {
     max-width: 35rem;
-    margin-bottom: 12rem;
   }
 }
 
 @media (min-width: 1550px) {
   #about li {
     max-width: 45rem;
+  }
+}
+
+@media (min-width: 300px) {
+  #mission {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/missionsmall.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 850px) {
+  #mission {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/missionlarge.svg");
+    padding-right: 2rem;
+    background-origin: padding-box;
+    padding-top: 18rem;
+    background-position: 30% 2rem;
+    background-size: 130px;
+  }
+}
+
+@media (min-width: 300px) {
+  #values {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/valuessmall.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 850px) {
+  #values {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/valueslarge.svg");
+    padding-right: 2rem;
+    background-origin: padding-box;
+    padding-top: 18rem;
+    background-position: 30% 2rem;
+    background-size: 130px;
+  }
+}
+
+@media (min-width: 300px) {
+  #vision {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/visionsmall.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 850px) {
+  #vision {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/visionlarge.svg");
+    padding-right: 2rem;
+    background-origin: padding-box;
+    padding-top: 18rem;
+    background-position: 30% 2rem;
+    background-size: 130px;
+  }
+}
+
+@media (min-width: 300px) {
+  #core {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/coresmall.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 850px) {
+  #core {
+    background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/corelarge.svg");
+    padding-right: 2rem;
+    background-origin: padding-box;
+    padding-top: 18rem;
+    background-position: 30% 2rem;
+    background-size: 130px;
   }
 }
 
@@ -710,7 +860,7 @@ div:first-of-type, div:last-of-type {
   #dedServices {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/repeatsmall.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 40% 50%;
     padding-left: 0;
   }
 }
@@ -730,7 +880,7 @@ div:first-of-type, div:last-of-type {
   #dedServices {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/repeatsmall.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 40% 50%;
     padding-left: 0;
   }
 }
@@ -750,7 +900,7 @@ div:first-of-type, div:last-of-type {
   #regServices {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/routesmall.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 40% 50%;
     padding-left: 0;
   }
 }
@@ -770,7 +920,7 @@ div:first-of-type, div:last-of-type {
   #regServices {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/routesmall.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 40% 50%;
     padding-left: 0;
   }
 }
@@ -790,7 +940,7 @@ div:first-of-type, div:last-of-type {
   #natServices {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/mapsmall.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 40% 50%;
     padding-left: 0;
   }
 }
@@ -810,7 +960,7 @@ div:first-of-type, div:last-of-type {
   #natServices {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/mapsmall.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 40% 50%;
     padding-left: 0;
   }
 }
@@ -827,11 +977,19 @@ div:first-of-type, div:last-of-type {
 }
 
 #careerspage {
-  background-color: #EBEBEB;
+  background-color: #ebebeb71;
+  overflow: hidden;
 }
 
 #careerspage p {
   min-height: 8rem;
+  max-width: 115rem;
+  margin: 0 auto;
+}
+
+#careerspage #mainpar {
+  text-align: justify;
+  margin-top: 2rem;
 }
 
 @media (min-width: 300px) {
@@ -867,27 +1025,33 @@ div:first-of-type, div:last-of-type {
   text-align: center;
 }
 
-@media (max-width: 767px) {
-  #careerspage #drvBenefits {
-    margin-top: -2rem;
-  }
-}
-
 #careerspage ul {
-  margin: 5rem 0;
   color: #121418;
 }
 
-@media (min-width: 780px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   #careerspage .col-md-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  #positions {
+    margin-left: 8rem;
   }
 }
 
 #positions li {
   color: #707070;
-  margin-bottom: 5rem;
+  margin: 5rem 0 2rem 0;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  #positions li {
+    margin: 8rem 5rem 8rem 0;
+  }
 }
 
 #apply {
@@ -901,24 +1065,24 @@ div:first-of-type, div:last-of-type {
   background-color: #80242B;
   padding: 0rem 6rem;
   height: 5rem;
-  margin: 1.5rem 0;
+  margin: 2rem 0;
 }
 
 @media (min-width: 550px) {
   #apply button {
-    padding: 0rem 10rem;
+    padding: 0 10rem;
   }
 }
 
 @media (min-width: 800px) {
   #apply button {
-    padding: 0rem 15rem;
+    padding: 0 15rem;
   }
 }
 
 @media (min-width: 1500px) {
   #apply button {
-    padding: 0rem 22rem;
+    padding: 0 22rem;
   }
 }
 
@@ -928,15 +1092,35 @@ div:first-of-type, div:last-of-type {
   }
 }
 
-@media (min-width: 1000px) {
-  #wrkBenefits {
-    padding-left: 15rem;
+.benefits li {
+  list-style-type: "▸ ";
+}
+
+#drvRequirements, #drvBenefits, #wrkBenefits {
+  margin: 2rem 0 5rem 25%;
+}
+
+@media (min-width: 550px) {
+  #drvRequirements, #drvBenefits, #wrkBenefits {
+    margin-left: 35%;
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 830px) {
+  #drvRequirements {
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 830px) {
+  #drvBenefits {
+    margin-left: 0%;
+  }
+}
+
+@media (min-width: 830px) {
   #wrkBenefits {
-    padding-left: 25rem;
+    margin-left: 40%;
   }
 }
 
@@ -944,7 +1128,7 @@ div:first-of-type, div:last-of-type {
   #dedCareers {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/repeatsmall.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 40% 50%;
     padding-left: 0;
   }
 }
@@ -952,14 +1136,11 @@ div:first-of-type, div:last-of-type {
 @media (min-width: 767.5px) {
   #dedCareers {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/repeatlarge.svg");
-    margin-right: 10rem;
+    padding-right: 2rem;
     background-origin: padding-box;
     padding-top: 18rem;
-    background-position: 30% 2rem;
+    background-position: 46% 2rem;
     background-size: 130px;
-  }
-  #dedCareers h3 {
-    margin-left: -18%;
   }
 }
 
@@ -967,7 +1148,7 @@ div:first-of-type, div:last-of-type {
   #regCareers {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/routesmall.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 40% 50%;
     padding-left: 0;
   }
 }
@@ -975,14 +1156,11 @@ div:first-of-type, div:last-of-type {
 @media (min-width: 767.5px) {
   #regCareers {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/routelarge.svg");
-    margin-right: 10rem;
+    padding-right: 2rem;
     background-origin: padding-box;
     padding-top: 18rem;
-    background-position: 30% 2rem;
+    background-position: 46% 2rem;
     background-size: 130px;
-  }
-  #regCareers h3 {
-    margin-left: -20%;
   }
 }
 
@@ -990,7 +1168,7 @@ div:first-of-type, div:last-of-type {
   #natCareers {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/mapsmall.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 40% 50%;
     padding-left: 0;
   }
 }
@@ -998,14 +1176,11 @@ div:first-of-type, div:last-of-type {
 @media (min-width: 767.5px) {
   #natCareers {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/maplarge.svg");
-    margin-right: 10rem;
+    padding-right: 2rem;
     background-origin: padding-box;
     padding-top: 18rem;
-    background-position: 30% 2rem;
+    background-position: 46% 2rem;
     background-size: 130px;
-  }
-  #natCareers h3 {
-    margin-left: -20%;
   }
 }
 
@@ -1013,7 +1188,7 @@ div:first-of-type, div:last-of-type {
   #cdlCareers {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/schoolsmall.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 40% 50%;
     padding-left: 0;
   }
 }
@@ -1021,14 +1196,122 @@ div:first-of-type, div:last-of-type {
 @media (min-width: 767.5px) {
   #cdlCareers {
     background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/schoollarge.svg");
-    margin-right: 10rem;
+    padding-right: 2rem;
     background-origin: padding-box;
     padding-top: 18rem;
-    background-position: 30% 2rem;
+    background-position: 46% 2rem;
     background-size: 130px;
   }
-  #cdlCareers h3 {
-    margin-left: -18%;
+}
+
+#reviews {
+  background-color: #ebebeb71;
+  padding: 6rem 4rem;
+}
+
+#reviews h2 {
+  color: #121418;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+#reviews h5, #reviews h6, #reviews .reviewRating {
+  background-color: #E6C2B2;
+}
+
+#reviews h5 {
+  padding-top: 1rem;
+  font-size: 2.5rem;
+  color: #80242B;
+}
+
+#reviews h6 {
+  color: #707070;
+}
+
+#reviews img {
+  float: left;
+  margin: 2rem;
+  border-radius: 35px;
+  width: 60px;
+  height: 60px;
+}
+
+.reviewCard {
+  background-color: #fff;
+  color: #121418;
+  max-width: 75rem;
+  margin: 0 auto;
+  border: solid 1.2px #80242B;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.486);
+}
+
+.reviewCard p:nth-of-type(1) {
+  padding: 5rem 8rem;
+  background-image: url("https://coneynicollete-fs.github.io/coneytransports/images/left-quote.svg"), url("https://coneynicollete-fs.github.io/coneytransports/images/right-quote.svg");
+  background-repeat: no-repeat;
+  background-position: left 20px top 20px, right 20px bottom 20px;
+  background-size: 30px;
+  background-origin: padding-box;
+}
+
+.reviewRating {
+  padding-bottom: 1rem;
+  font-size: 0;
+  color: #80242B;
+}
+
+.reviewRating::before {
+  content: "star star star star star";
+  font-family: "Material Icons";
+  font-size: 2rem;
+}
+
+.carousel, .carousel-item {
+  position: inherit;
+  float: none;
+}
+
+#finalCTA {
+  background-color: #E6C2B2;
+}
+
+@media (min-width: 300px) {
+  #finalCTA {
+    padding: 3rem 4rem;
+  }
+}
+
+@media (min-width: 400px) {
+  #finalCTA {
+    padding: 3rem 8rem;
+  }
+}
+
+#finalCTA p {
+  width: fit-content;
+  margin: 0 auto;
+  color: #E6C2B2;
+  border-radius: 50rem;
+  background-color: #80242B;
+  padding: 1.5rem 6rem;
+}
+
+@media (min-width: 550px) {
+  #finalCTA p {
+    padding: 1.5rem 10rem;
+  }
+}
+
+@media (min-width: 800px) {
+  #finalCTA p {
+    padding: 1.5rem 15rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  #finalCTA p {
+    padding: 1.5rem 22rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

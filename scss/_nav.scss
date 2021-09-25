@@ -1,7 +1,7 @@
 :target {
     @media (min-width: 300px) {
-        scroll-margin-top: 20rem;
-        scroll-snap-margin-top: 20rem;
+        scroll-margin-top: 25rem;
+        scroll-snap-margin-top: 25rem;
     }
 
     @media (min-width: 977px) {
@@ -25,22 +25,20 @@ h1 a:hover, h2 a:hover {
     color: $mainlightcolor;
 }
 
-.quoteBtn, #cta a {
-    display: table;
-    margin: -1.5rem 0;
+.quoteBtn, .goToServices {
     transition: transform, background-color 0.3s ease-in-out;
     box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.164) inset;
 
-    @media (min-width:992px) { 
-        margin-top: 0;
-    }
 
     @media(any-hover: hover) {
         &:hover {
-            color: $darkaccentcolor;
             background-color: $lightaccentcolor;
             border-color: $darkaccentcolor;
             box-shadow: 3px 3px 5px rgba(59, 19, 19, 0.432) inset;
+
+            a {
+                color: $darkaccentcolor;
+            }
         }
     }
 
@@ -49,7 +47,7 @@ h1 a:hover, h2 a:hover {
     }
 }
 
-form button, #careerspage button {
+form button, #careerspage button, #finalCTA p {
     border: solid 1px $fontcolor;
     transition: transform, background-color 0.3s ease-in-out;
     box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.397) inset;
