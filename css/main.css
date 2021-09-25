@@ -317,10 +317,17 @@ form button, #careerspage button, #finalCTA p {
   box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.397) inset;
 }
 
+form button a, #careerspage button a, #finalCTA p a {
+  color: #E6C2B2;
+}
+
 @media (any-hover: hover) {
   form button:hover, #careerspage button:hover, #finalCTA p:hover {
     color: #80242B;
     background-color: #707070;
+  }
+  form button:hover a, #careerspage button:hover a, #finalCTA p:hover a {
+    color: #80242B;
   }
 }
 

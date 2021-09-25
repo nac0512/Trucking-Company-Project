@@ -52,10 +52,18 @@ form button, #careerspage button, #finalCTA p {
     transition: transform, background-color 0.3s ease-in-out;
     box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.397) inset;
 
+    a {
+        color: $lightaccentcolor;
+    }
+
     @media (any-hover: hover) {
         &:hover {
             color: $darkaccentcolor;
             background-color: $fontcolor;
+
+            a {
+                color: $darkaccentcolor;
+            }
         }
     }
 
