@@ -47,7 +47,7 @@ h1 a:hover, h2 a:hover {
     }
 }
 
-form button, #careerspage button {
+form button, #careerspage button, #finalCTA p {
     border: solid 1px $fontcolor;
     transition: transform, background-color 0.3s ease-in-out;
     box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.397) inset;

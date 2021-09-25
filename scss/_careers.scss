@@ -86,15 +86,15 @@
 
 
         @media (min-width: 550px) {
-            padding: 0rem 10rem;
+            @include gutters(0, 10rem);
         }
 
         @media (min-width: 800px) {
-            padding: 0rem 15rem;
+            @include gutters(0, 15rem);
         }
 
         @media (min-width: 1500px) {
-            padding: 0rem 22rem;
+            @include gutters(0, 22rem);
         }
         
         &:first-of-type {

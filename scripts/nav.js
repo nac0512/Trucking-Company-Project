@@ -15,14 +15,11 @@ class Navigation {
                     if (pageYOffset >= sectionTop - 300) {
                         current = section.getAttribute("id");
                     }
-                    console.log("test1");
                 }
                 else {
                     if (pageYOffset >= sectionTop - 120) {
                         current = section.getAttribute("id");
                     }
-
-                    console.log("test2");
                 }
             });
 

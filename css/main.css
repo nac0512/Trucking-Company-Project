@@ -48,6 +48,7 @@ header, footer {
 header {
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 header li {
@@ -127,45 +128,6 @@ footer a, footer p, footer input {
 
 footer p {
   max-width: 50rem;
-}
-
-footer input {
-  height: 6rem;
-  border: 2px solid #ffffff;
-  color: #E6C2B2;
-  background-color: #80242B;
-  text-indent: 1rem;
-}
-
-@media (min-width: 300px) {
-  footer input {
-    max-width: 65%;
-  }
-}
-
-@media (min-width: 400px) {
-  footer input {
-    width: 75%;
-  }
-}
-
-footer button {
-  height: 6rem;
-  padding: 0 1.5rem;
-  background-color: #ffffff;
-  margin-left: -1rem;
-  color: transparent;
-  background: white url("https://coneynicollete-fs.github.io/coneytransports/images/email.svg") no-repeat top;
-}
-
-@media (any-hover: hover) {
-  footer button:hover {
-    background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailhover.svg") no-repeat top;
-  }
-}
-
-footer button:active {
-  background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailactive.svg") no-repeat top;
 }
 
 footer .errorLabel {
@@ -254,6 +216,52 @@ a {
   color: #E6C2B2;
 }
 
+.subscribeSection {
+  font-size: 0;
+}
+
+.subscribeSection p, .subscribeSection button, .subscribeSection input {
+  font-size: 2rem;
+}
+
+.subscribeSection input {
+  height: 6rem;
+  border: 2px solid #ffffff;
+  color: #E6C2B2;
+  background-color: #80242B;
+  text-indent: 1rem;
+}
+
+@media (min-width: 300px) {
+  .subscribeSection input {
+    min-width: 65%;
+  }
+}
+
+@media (min-width: 550px) {
+  .subscribeSection input {
+    min-width: 75%;
+  }
+}
+
+.subscribeSection button {
+  height: 6rem;
+  padding: 0 1.5rem;
+  background-color: #ffffff;
+  color: transparent;
+  background: white url("https://coneynicollete-fs.github.io/coneytransports/images/email.svg") no-repeat top;
+}
+
+@media (any-hover: hover) {
+  .subscribeSection button:hover {
+    background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailhover.svg") no-repeat top;
+  }
+}
+
+.subscribeSection button:active {
+  background: white url("https://coneynicollete-fs.github.io/coneytransports/images/emailactive.svg") no-repeat top;
+}
+
 @media (min-width: 300px) {
   :target {
     scroll-margin-top: 25rem;
@@ -303,20 +311,20 @@ h1 a:hover, h2 a:hover {
   transform: scale(0.93);
 }
 
-form button, #careerspage button {
+form button, #careerspage button, #finalCTA p {
   border: solid 1px #707070;
   transition: transform, background-color 0.3s ease-in-out;
   box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.397) inset;
 }
 
 @media (any-hover: hover) {
-  form button:hover, #careerspage button:hover {
+  form button:hover, #careerspage button:hover, #finalCTA p:hover {
     color: #80242B;
     background-color: #707070;
   }
 }
 
-form button:active, #careerspage button:active {
+form button:active, #careerspage button:active, #finalCTA p:active {
   transform: scale(0.98);
 }
 
@@ -545,7 +553,7 @@ label:not(.errorLabel) {
 
 @media (min-width: 300px) {
   #cta {
-    padding: 0rem 4rem;
+    padding: 0 4rem;
   }
 }
 
@@ -1062,19 +1070,19 @@ label:not(.errorLabel) {
 
 @media (min-width: 550px) {
   #apply button {
-    padding: 0rem 10rem;
+    padding: 0 10rem;
   }
 }
 
 @media (min-width: 800px) {
   #apply button {
-    padding: 0rem 15rem;
+    padding: 0 15rem;
   }
 }
 
 @media (min-width: 1500px) {
   #apply button {
-    padding: 0rem 22rem;
+    padding: 0 22rem;
   }
 }
 
@@ -1262,5 +1270,48 @@ label:not(.errorLabel) {
 .carousel, .carousel-item {
   position: inherit;
   float: none;
+}
+
+#finalCTA {
+  background-color: #E6C2B2;
+}
+
+@media (min-width: 300px) {
+  #finalCTA {
+    padding: 3rem 4rem;
+  }
+}
+
+@media (min-width: 400px) {
+  #finalCTA {
+    padding: 3rem 8rem;
+  }
+}
+
+#finalCTA p {
+  width: fit-content;
+  margin: 0 auto;
+  color: #E6C2B2;
+  border-radius: 50rem;
+  background-color: #80242B;
+  padding: 1.5rem 6rem;
+}
+
+@media (min-width: 550px) {
+  #finalCTA p {
+    padding: 1.5rem 10rem;
+  }
+}
+
+@media (min-width: 800px) {
+  #finalCTA p {
+    padding: 1.5rem 15rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  #finalCTA p {
+    padding: 1.5rem 22rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
