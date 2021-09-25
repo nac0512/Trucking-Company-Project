@@ -8,16 +8,21 @@ class Navigation {
         let current = "";
 
             sections.forEach((section) => {
+                const smallToMedScreen = window.matchMedia("(max-width: 995px)");
                 const sectionTop = section.offsetTop;
-                if(window.matchMedia("(min-width: 300px)")) {
-                    if (pageYOffset >= sectionTop - 755) {
+
+                if(smallToMedScreen.matches) {
+                    if (pageYOffset >= sectionTop - 300) {
                         current = section.getAttribute("id");
                     }
+                    console.log("test1");
                 }
-                else if(window.matchMedia("(min-width: 996px)")) {
-                    if (pageYOffset >= sectionTop - 235) {
+                else {
+                    if (pageYOffset >= sectionTop - 120) {
                         current = section.getAttribute("id");
                     }
+
+                    console.log("test2");
                 }
             });
 

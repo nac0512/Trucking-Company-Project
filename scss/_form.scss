@@ -47,15 +47,15 @@ form {
         padding-top: 28rem;
         background-position-x: 60%;
         background-size: 200px; 
-        }
+    }
+
+    div:first-of-type, div:last-of-type {
+        width: 100%;
+    }
 }
 
 label:not(.errorLabel) {
     display: none;
-}
-
-div:first-of-type, div:last-of-type {
-    width: 100%;
 }
 
 .errorLabel {
